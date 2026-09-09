@@ -1,0 +1,2701 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANECTTA | Central de Operações de TI 100% Remota | Suporte Sem Deslocamento</title>
+  <meta name="description" content="Suporte de TI 100% remoto para empresas. Diagnóstico, correção, servidores, redes, segurança, Microsoft 365 e backup à distância com conexão autorizada e segura.">
+  <meta name="keywords" content="suporte de ti remoto, suporte remoto empresas, ti sem deslocamento, gestao de ti, microsoft 365 empresas, backup em nuvem, ciberseguranca remota">
+  <meta name="author" content="ANECTTA Tecnologia">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ANECTTA | Central de Operações de TI 100% Remota">
+  <meta property="og:description" content="Sua TI resolvida sem esperar um técnico chegar. Atendimento remoto seguro para empresas em todo o Brasil.">
+  <meta property="og:url" content="https://anectta.com.br/">
+  
+  <!-- Tailwind CSS via CDN para utilitários modernos e responsivos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49'
+            },
+            tech: {
+              navy: '#0f172a',
+              surface: '#f8fafc',
+              card: '#ffffff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Schema.org JSON-LD para SEO Estruturado -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ITService",
+    "name": "ANECTTA Tecnologia",
+    "description": "Central de Operações de TI 100% Remota para empresas em todo o Brasil. Mais de 10 anos no segmento de TIC.",
+    "url": "https://anectta.com.br/",
+    "telephone": "+55-21-99705-8709",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Evandro Lins e Silva, 840 Sala 411P Office Tower",
+      "addressLocality": "Barra da Tijuca",
+      "addressRegion": "RJ",
+      "postalCode": "22631-470",
+      "addressCountry": "BR"
+    },
+    "areaServed": "BR",
+    "serviceType": [
+      "Suporte de TI Remoto",
+      "Gestão de Servidores",
+      "Microsoft 365",
+      "Backup em Nuvem",
+      "Firewall e VPN",
+      "Segurança da Informação"
+    ]
+  }
+  </script>
+
+  <!-- Estilos Customizados da ANECTTA -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/speedtest.css">
+</head>
+<body class="cyber-bg text-slate-900 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- ====================================================
+       2. HEADER / NAVEGAÇÃO PRINCIPAL
+       ==================================================== -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 lg:h-28 flex items-center justify-between">
+      
+      <!-- LOGO ANECTTA -->
+      <a href="index.html" class="flex items-center group py-2" title="ANECTTA - Soluções em Tecnologia">
+        <img src="assets/images/anectta-logo-transparent.png" alt="ANECTTA - Soluções em Tecnologia" class="h-12 sm:h-14 lg:h-[72px] w-auto object-contain drop-shadow-[0_4px_12px_rgba(2,132,199,0.2)] group-hover:opacity-95 transition">
+      </a>
+
+      <!-- MENU DESKTOP: ÍCONES NO PADRÃO SQUIRCLE AZUL COM SÍMBOLO BRANCO (+10% TAMANHO) -->
+      <nav class="hidden lg:flex items-center gap-1.5 xl:gap-3 text-slate-700">
+        <!-- Início -->
+        <a href="index.html" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L2 11h3v9a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-5h2v5a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-9h3L12 3z"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide">Início</span>
+        </a>
+
+        <!-- Sobre nós -->
+        <a href="#sobre-nos" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="7" r="3"/><path d="M12 11.5c-3 0-5.5 2-5.8 4.8a1 1 0 0 0 1 1.2h9.6a1 1 0 0 0 1-1.2c-.3-2.8-2.8-4.8-5.8-4.8z"/><circle cx="5" cy="9" r="2"/><path d="M5 12.5c-1.8 0-3.3 1.2-3.5 2.8a.8.8 0 0 0 .8 1.2h3.9a3.5 3.5 0 0 1-.2-1.5c0-.9.3-1.7.8-2.4h-1.8z"/><circle cx="19" cy="9" r="2"/><path d="M19 12.5h-1.8c.5.7.8 1.5.8 2.4 0 .5-.1 1-.2 1.5h3.9a.8.8 0 0 0 .8-1.2c-.2-1.6-1.7-2.8-3.5-2.8z"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide whitespace-nowrap">Sobre nós</span>
+        </a>
+
+        <!-- Serviços -->
+        <a href="#servicos" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2.2"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide">Serviços</span>
+        </a>
+
+        <!-- Planos -->
+        <a href="#planos" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm4 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5zm-4 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm12 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5zm-12 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm7 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide">Planos</span>
+        </a>
+
+        <!-- Velocímetro -->
+        <a href="#velocimetro" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C7.03 4 3 8.03 3 13c0 2.45.99 4.67 2.6 6.29.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41C5.62 16.49 5 14.82 5 13c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.82-.62 3.49-2.01 4.88-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0C20.01 17.67 21 15.45 21 13c0-4.97-4.03-9-9-9zm-1 4v2.16c-.59.27-1.08.73-1.41 1.31l-2.12-1.22c-.41-.24-.93-.1-.1.17.31.24.41.1.93-.31.7-.17.31l2.12 1.22c-.18.47-.28.98-.28 1.52 0 2.21 1.79 4 4 4s4-1.79 4-4c0-1.95-1.4-3.57-3.25-3.92V8c0-.55-.45-1-1-1s-1 .45-1 1zm1 7c-.55 0-1-.45-1-1 0-.25.09-.47.25-.65l1.4 1.4c-.18.16-.4.25-.65.25z"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide">Velocímetro</span>
+        </a>
+
+        <!-- Contato -->
+        <a href="#contato" class="flex flex-col items-center justify-center gap-1 px-2.5 xl:px-3 py-1 rounded-xl text-slate-700 hover:text-sky-600 hover:bg-slate-100/80 group transition-all duration-200">
+          <div class="w-8 h-8 xl:w-9 xl:h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/40 group-hover:-translate-y-0.5 transition-all duration-200">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 3.2l-8 5-8-5V6l8 5 8-5v1.2z"/></svg>
+          </div>
+          <span class="text-[10.5px] xl:text-[11.5px] font-semibold tracking-wide">Contato</span>
+        </a>
+      </nav>
+
+      <!-- CTAs DO CABEÇALHO -->
+      <div class="hidden sm:flex items-center gap-2 xl:gap-3 shrink-0">
+        <a href="area-do-cliente.html" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:text-slate-900 border border-slate-300 bg-slate-50 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span class="hidden 2xl:inline">Área do Cliente</span>
+        </a>
+        <button type="button" class="btn-open-support px-3.5 xl:px-4 py-2.5 rounded-xl btn-emergency text-xs font-bold text-white flex items-center gap-2 shadow-md whitespace-nowrap">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-emerald"></span>
+          <span>PRECISO DE SUPORTE</span>
+        </button>
+      </div>
+
+      <!-- BOTÃO MOBILE HAMBÚRGUER -->
+      <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg bg-slate-100 border border-slate-200 text-slate-700 hover:text-slate-900">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE NAVEGAÇÃO -->
+  <div id="mobile-nav-drawer" class="fixed inset-0 bg-white/98 z-50 flex flex-col justify-between p-6 transform translate-x-full transition-transform duration-300 lg:hidden shadow-2xl border-l border-slate-200">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200">
+        <img src="assets/images/anectta-logo-transparent.png" alt="ANECTTA" class="h-8 w-auto object-contain">
+        <button type="button" id="mobile-menu-close" class="p-2 rounded-lg bg-slate-100 text-slate-500 hover:text-slate-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="flex flex-col gap-1.5 py-4 text-sm font-medium overflow-y-auto max-h-[calc(100vh-220px)]">
+        <a href="index.html" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L2 11h3v9a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-5h2v5a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-9h3L12 3z"/></svg>
+          </div>
+          <span class="font-semibold">Início</span>
+        </a>
+        <a href="#sobre-nos" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="7" r="3"/><path d="M12 11.5c-3 0-5.5 2-5.8 4.8a1 1 0 0 0 1 1.2h9.6a1 1 0 0 0 1-1.2c-.3-2.8-2.8-4.8-5.8-4.8z"/><circle cx="5" cy="9" r="2"/><path d="M5 12.5c-1.8 0-3.3 1.2-3.5 2.8a.8.8 0 0 0 .8 1.2h3.9a3.5 3.5 0 0 1-.2-1.5c0-.9.3-1.7.8-2.4h-1.8z"/><circle cx="19" cy="9" r="2"/><path d="M19 12.5h-1.8c.5.7.8 1.5.8 2.4 0 .5-.1 1-.2 1.5h3.9a.8.8 0 0 0 .8-1.2c-.2-1.6-1.7-2.8-3.5-2.8z"/></svg>
+          </div>
+          <span class="font-semibold">Sobre nós</span>
+        </a>
+        <a href="#servicos" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2.2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2.2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2.2"/></svg>
+          </div>
+          <span class="font-semibold">Serviços</span>
+        </a>
+        <a href="#planos" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm4 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5zm-4 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm12 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5zm-12 5h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2zm7 2a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+          </div>
+          <span class="font-semibold">Planos</span>
+        </a>
+        <a href="#velocimetro" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C7.03 4 3 8.03 3 13c0 2.45.99 4.67 2.6 6.29.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41C5.62 16.49 5 14.82 5 13c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.82-.62 3.49-2.01 4.88-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0C20.01 17.67 21 15.45 21 13c0-4.97-4.03-9-9-9zm-1 4v2.16c-.59.27-1.08.73-1.41 1.31l-2.12-1.22c-.41-.24-.93-.1-.1.17.31.24.41.1.93-.31.7-.17.31l2.12 1.22c-.18.47-.28.98-.28 1.52 0 2.21 1.79 4 4 4s4-1.79 4-4c0-1.95-1.4-3.57-3.25-3.92V8c0-.55-.45-1-1-1s-1 .45-1 1zm1 7c-.55 0-1-.45-1-1 0-.25.09-.47.25-.65l1.4 1.4c-.18.16-.4.25-.65.25z"/></svg>
+          </div>
+          <span class="font-semibold">Velocímetro</span>
+        </a>
+        <a href="#contato" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition shrink-0">
+            <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 3.2l-8 5-8-5V6l8 5 8-5v1.2z"/></svg>
+          </div>
+          <span class="font-semibold">Contato</span>
+        </a>
+        <a href="#como-funciona" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-8 h-8 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.9 17.55 11 21 11 21z"/></svg>
+          </div>
+          <span>Como Funciona</span>
+        </a>
+        <a href="#velocimetro" class="mobile-nav-link text-sky-600 hover:text-sky-700 font-bold flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 transition">
+          <div class="w-8 h-8 rounded-xl bg-sky-100 flex items-center justify-center text-sky-600 shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C6.48 4 2 8.48 2 14c0 2.45.88 4.7 2.34 6.45.38.46 1.05.5 1.5-.02.43-.51.4-.27.81-.66A9.95 9.95 0 0 1 4 14c0-4.41 3.59-8 8-8s8 3.59 8 8c0 2.2-.89 4.2-2.33 5.65.37.37.35.15.77.64.44.51 1.12.47 1.5.02A11.93 11.93 0 0 0 22 14c0-5.52-4.48-10-10-10zm-.71 5.29a1 1 0 0 0-.29.71v.15l2.25 3.9a1.5 1.5 0 1 0 1.42-.82l-2.67-3.65a1 1 0 0 0-.71-.29z"/></svg>
+          </div>
+          <span class="flex items-center gap-2">Velocímetro <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span></span>
+        </a>
+        <a href="#seguranca" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-8 h-8 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <span>Segurança do Acesso</span>
+        </a>
+        <a href="#faq" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-xl hover:bg-slate-100/80 group transition">
+          <div class="w-8 h-8 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <span>Perguntas Frequentes</span>
+        </a>
+        <a href="iniciar-suporte.html" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition">
+          <svg class="w-5 h-5 text-sky-600 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          <span>Download de Ferramentas</span>
+        </a>
+        <a href="area-do-cliente.html" class="mobile-nav-link text-slate-700 hover:text-sky-600 flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition">
+          <svg class="w-5 h-5 text-sky-600 shrink-0" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="7" r="4"/><path d="M12 13c-4.4 0-8 2.2-8 5.5v.5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-.5c0-3.3-3.6-5.5-8-5.5z"/></svg>
+          <span>Portal do Cliente</span>
+        </a>
+        <a href="admin.html" class="mobile-nav-link text-slate-500 hover:text-slate-800 text-xs flex items-center gap-3 p-2 rounded-lg transition">
+          <svg class="w-4 h-4 text-slate-400 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          <span>Acesso Administrativo</span>
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-slate-200 space-y-3">
+      <button type="button" class="btn-open-support w-full py-3.5 rounded-xl btn-emergency text-sm font-bold text-white text-center block shadow-md">
+        PRECISO DE SUPORTE AGORA
+      </button>
+      <a href="tel:21997058709" class="w-full py-3 rounded-xl bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700 text-center block">
+        Ligar: (21) 99705-8709
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ====================================================
+         3. HERO / PRIMEIRA DOBRA (CENTRAL DE OPERAÇÕES)
+         ==================================================== -->
+    <section class="relative pt-6 pb-16 lg:pt-10 lg:pb-24 overflow-hidden">
+      <!-- Elementos Decorativos de Fundo (Mesh Glow Orbs) -->
+      <div class="hero-glow-orb top-10 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-sky-500/10"></div>
+      <div class="hero-glow-orb top-40 -left-20 w-[420px] h-[420px] bg-cyan-500/8"></div>
+      <div class="hero-glow-orb bottom-10 -right-20 w-[420px] h-[420px] bg-emerald-500/8"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- GRID PRINCIPAL DA HERO: TEXTOS E O VELOCÍMETRO CLONE EM TEMPO REAL -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-12">
+          
+          <!-- COLUNA ESQUERDA: TEXTOS, CTAs E DESTAQUES -->
+          <div class="lg:col-span-7 text-center lg:text-left reveal-on-scroll pt-4">
+            
+            <!-- BADGES SUPERIORES PREMIUM (TIPOGRAFIA E ESTILO CONEXÃO ATIVA COM ÍCONES CONTEXTUAIS E PULSO SEQUENCIAL) -->
+            <div class="hero-badges-row justify-center lg:justify-start mb-4">
+              
+              <!-- 1. Suporte 100% Remoto | Global -->
+              <span class="hero-feature-badge badge-seq-1">
+                <div class="badge-icon-squircle badge-squircle-sky text-white">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.3">
+                    <circle cx="12" cy="12" r="9.5"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 12h19M12 2.5a15 15 0 0 1 0 19M12 2.5a15 15 0 0 0 0 19"/>
+                  </svg>
+                </div>
+                <span class="text-slate-400 font-medium">SUPORTE:</span>
+                <span class="text-sky-700 font-bold font-mono">100% REMOTO | GLOBAL</span>
+              </span>
+
+              <!-- 2. +10 Anos no Mercado -->
+              <span class="hero-feature-badge badge-seq-2">
+                <div class="badge-icon-squircle badge-squircle-sky text-white">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.3">
+                    <circle cx="12" cy="8.5" r="5.5"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 13.5L7 21.5l5-3 5 3-1.5-8"/>
+                  </svg>
+                </div>
+                <span class="text-slate-400 font-medium">EXPERIÊNCIA:</span>
+                <span class="text-sky-700 font-bold font-mono">+10 ANOS EM TIC</span>
+              </span>
+
+              <!-- 3. Atendimento Presencial | Rio de Janeiro -->
+              <span class="hero-feature-badge badge-seq-3">
+                <div class="badge-icon-squircle badge-squircle-sky text-white">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 12.5 7 12.5s7-7.25 7-12.5c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.2"/>
+                  </svg>
+                </div>
+                <span class="text-slate-400 font-medium">PRESENCIAL:</span>
+                <span class="text-sky-700 font-bold font-mono">RIO DE JANEIRO</span>
+              </span>
+
+            </div>
+
+            <!-- HEADLINE IMPACTANTE (Harmonização de Cores Tech Navy & Cyan) -->
+            <h1 class="text-3xl sm:text-4xl lg:text-[45px] font-extrabold tracking-tight leading-[1.18] mb-4">
+              <span class="bg-gradient-to-r from-[#0a1e3b] via-[#0f3460] to-[#0369a1] bg-clip-text text-transparent">Corretivo, Preventivo e Proativo.</span> <span class="bg-gradient-to-r from-[#0f3460] via-[#0284c7] to-[#0ea5e9] bg-clip-text text-transparent">Mais que suporte...</span><br>
+              <span class="gradient-text-accent bg-gradient-to-r from-sky-500 via-sky-400 to-cyan-400 bg-clip-text text-transparent">Experimente!!</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl lg:max-w-none mb-6 leading-relaxed font-normal">
+              Equipe especializada em atendimento remoto para suporte imediato a usuários, computadores, redes e sistemas, além de suporte presencial sob demanda para intervenções técnicas mais complexas. Eficiência operacional, zero perda de tempo e especialistas prontos para resolver o seu problema rapidamente.
+            </p>
+
+            <!-- CTAs PRINCIPAIS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-6">
+              <button type="button" class="btn-open-support w-full sm:w-auto px-7 py-3.5 rounded-xl btn-emergency text-sm sm:text-base font-bold text-white shadow-lg flex items-center justify-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-emerald"></span>
+                PRECISO DE SUPORTE AGORA
+              </button>
+              <a href="#planos" class="w-full sm:w-auto px-7 py-3.5 rounded-xl btn-secondary-tech text-sm sm:text-base font-bold text-slate-700 text-center">
+                CONHECER OS PLANOS
+              </a>
+            </div>
+
+            <!-- DESTAQUES: SIGILO GARANTIDO & ACESSO REMOTO (SPOTLIGHT CARDS) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0 text-left">
+              
+              <!-- Card 1: Sigilo Garantido -->
+              <div class="spotlight-card p-3.5 sm:p-4 rounded-2xl bg-white border border-slate-200 hover:border-sky-500 shadow-md group">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 text-sky-600 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                    <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="10" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8 11V7a4 4 0 018 0v4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-900 tracking-tight">Sigilo Garantido</h3>
+                    <p class="text-[11px] text-sky-600 font-semibold">Controle de acesso</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Acesso Remoto -->
+              <div class="spotlight-card p-3.5 sm:p-4 rounded-2xl bg-white border border-slate-200 hover:border-sky-500 shadow-md group">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 text-sky-600 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                    <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <circle cx="18" cy="5" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="6" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="18" cy="19" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke-linecap="round" stroke-linejoin="round"/>
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-900 tracking-tight">Acesso Remoto</h3>
+                    <p class="text-[11px] text-sky-600 font-semibold">VPN criptografada</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- COLUNA DIREITA: VELOCÍMETRO CLONE COM ANIMAÇÃO CONTÍNUA DE CONEXÃO REAL -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center py-2 relative reveal-on-scroll">
+            
+            <div class="hero-gauge-container w-full flex flex-col items-center justify-center">
+              
+              <div class="hero-gauge-wrapper flex items-center justify-center select-none relative">
+                <!-- CÍRCULOS CONCÊNTRICOS POR FORA DO VELOCÍMETRO -->
+                <div class="nperf-gauge-external-rings pointer-events-none">
+                  <div class="nperf-ext-ring nperf-ext-ring-1"></div>
+                  <div class="nperf-ext-ring nperf-ext-ring-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-1"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-3"></div>
+                </div>
+
+                <svg viewBox="0 0 400 400" class="w-full h-full overflow-visible cockpit-speedometer-svg" style="overflow: visible;">
+  <defs>
+    <!-- Fundo da Base Externa em Degradê Azul Cibernético -->
+    <radialGradient id="baseBlueRadialBg_hero-gauge-needle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#075985" />
+      <stop offset="35%" stop-color="#034575" />
+      <stop offset="70%" stop-color="#022852" />
+      <stop offset="100%" stop-color="#01142e" />
+    </radialGradient>
+
+    <!-- Gradiente Fundo do Dial Central (Azul Profundo Cockpit com Luminosidade Atenuada) -->
+    <radialGradient id="dialDarkRadialBg_hero-gauge-needle" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.45" />
+      <stop offset="25%" stop-color="#035482" />
+      <stop offset="60%" stop-color="#052c52" />
+      <stop offset="85%" stop-color="#021a36" />
+      <stop offset="100%" stop-color="#010d1c" />
+    </radialGradient>
+
+    <!-- Gradiente do Cubo Central -->
+    <radialGradient id="centerHubRadialBg_hero-gauge-needle" cx="45%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="55%" stop-color="#063868" />
+      <stop offset="100%" stop-color="#021226" />
+    </radialGradient>
+
+    <!-- Gradiente do Ponteiro Neon Laranja Flamejante -->
+    <linearGradient id="needleOrangeFireGrad_hero-gauge-needle" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff3d00" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#ff6d00" />
+      <stop offset="80%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ffe57f" />
+    </linearGradient>
+
+    <!-- Gradiente do Anel Neon Ciano Interno (Mais Escurecido) -->
+    <linearGradient id="haloCyanInnerGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#0369a1" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+
+    <!-- Gradiente do Anel Neon Ciano Externo -->
+    <linearGradient id="haloCyanGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Gradiente da Trilha do Arco Ativo -->
+    <linearGradient id="dialArcGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. BASE CIRCULAR DE VIDRO ESCURO COM DEGRADÊ AZUL COCKPIT -->
+  <circle cx="200" cy="200" r="194" fill="url(#baseBlueRadialBg_hero-gauge-needle)" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- 2. ANEL DE NEON CIANO EXTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="184" fill="none" stroke="url(#haloCyanGrad_hero-gauge-needle)" stroke-width="4.5" class="cockpit-neon-cyan-ring" />
+  <circle cx="200" cy="200" r="188" fill="none" stroke="#00d2ff" stroke-width="1.2" opacity="0.4" />
+
+  <!-- 3. ANEL DE HALO CIANO NEON INTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#haloCyanInnerGrad_hero-gauge-needle)" stroke-width="3.2" class="cockpit-neon-cyan-inner-ring" />
+
+  <!-- 4. ASAS LATERAIS COM 12 BARRAS DE LED CADA (ILUMINAÇÃO DINÂMICA) -->
+  <!-- Asa Esquerda -->
+  <g class="cockpit-wing-left">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 128 78 L 88 78 L 56 160 L 56 240 L 88 322 L 128 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-left-0" x="96" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-1" x="86" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-2" x="78" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-3" x="72" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-4" x="68" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-5" x="66" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-6" x="66" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-7" x="68" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-8" x="72" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-9" x="78" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-10" x="86" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-11" x="96" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- Asa Direita -->
+  <g class="cockpit-wing-right">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 272 78 L 312 78 L 344 160 L 344 240 L 312 322 L 272 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-right-0" x="278" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-1" x="286" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-2" x="292" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-3" x="297" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-4" x="300" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-5" x="301" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-6" x="301" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-7" x="300" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-8" x="297" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-9" x="292" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-10" x="286" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-11" x="278" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- 5. MOSTRADOR PRINCIPAL DO DIAL (GRADIENTE RADIAL AZUL EM DEGRADÊ) -->
+  <circle cx="200" cy="200" r="150" fill="url(#dialDarkRadialBg_hero-gauge-needle)" stroke="#00d2ff" stroke-width="2.5" opacity="0.98" />
+  <circle cx="200" cy="200" r="148" fill="none" stroke="rgba(0, 210, 255, 0.4)" stroke-width="1" />
+
+  <!-- 6. ONDAS RADIANTES EXPANSIVAS EMITIDAS DO CENTRO (RADAR HUD PULSE) -->
+  <g class="cockpit-radiant-pulse-waves" pointer-events="none">
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="2" class="cockpit-wave-ring cockpit-wave-1" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#38bdf8" stroke-width="1.8" class="cockpit-wave-ring cockpit-wave-2" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00f0ff" stroke-width="1.5" class="cockpit-wave-ring cockpit-wave-3" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="1.2" class="cockpit-wave-ring cockpit-wave-4" />
+  </g>
+
+  <!-- 7. MARCAÇÕES DO DIAL / TICKS & NÚMEROS (0, 1M, 5M, 10M, 25M, 50M, 100M, 250M, 500M, 1G+) -->
+  <!-- Subticks Intermediários -->
+  <g class="cockpit-subticks">
+    <line x1="84.9" y1="276.2" x2="91.6" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="77.0" y1="262.7" x2="87.7" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="70.7" y1="248.3" x2="78.2" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="63.2" y1="218.0" x2="71.1" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="62.0" y1="202.4" x2="74.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="62.6" y1="186.8" x2="70.6" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="69.1" y1="156.2" x2="76.7" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="74.9" y1="141.7" x2="85.8" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="82.3" y1="127.9" x2="89.2" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="101.6" y1="103.3" x2="107.3" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="113.2" y1="92.8" x2="120.7" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="125.9" y1="83.6" x2="130.2" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="153.9" y1="69.9" x2="156.6" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="169.0" y1="65.5" x2="171.7" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="184.4" y1="62.9" x2="185.3" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="215.6" y1="62.9" x2="214.7" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="231.0" y1="65.5" x2="228.3" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="246.1" y1="69.9" x2="243.4" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="274.1" y1="83.6" x2="269.8" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="286.8" y1="92.8" x2="279.3" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="298.4" y1="103.3" x2="292.7" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="317.7" y1="127.9" x2="310.8" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="325.1" y1="141.7" x2="314.2" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="330.9" y1="156.2" x2="323.3" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="337.4" y1="186.8" x2="329.4" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="338.0" y1="202.4" x2="326.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="336.8" y1="218.0" x2="328.9" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="329.3" y1="248.3" x2="321.8" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="323.0" y1="262.7" x2="312.3" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="315.1" y1="276.2" x2="308.4" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+  </g>
+
+  <!-- Ticks Principais & Valores -->
+  <g class="cockpit-major-ticks">
+    <!-- 0 -->
+    <line x1="94.3" y1="288.7" x2="108.1" y2="277.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="121.9" y="269.1" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">0</text>
+    <!-- 1M -->
+    <line x1="66.1" y1="233.4" x2="83.6" y2="229.0" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="101.0" y="228.2" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1M</text>
+    <!-- 5M -->
+    <line x1="65.0" y1="171.3" x2="82.6" y2="175.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="100.2" y="182.3" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">5M</text>
+    <!-- 10M -->
+    <line x1="91.3" y1="115.0" x2="105.4" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="119.6" y="140.7" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">10M</text>
+    <!-- 25M -->
+    <line x1="139.5" y1="76.0" x2="147.4" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="155.3" y="111.8" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">25M</text>
+    <!-- 50M -->
+    <line x1="200.0" y1="62.0" x2="200.0" y2="80.0" stroke="#00f0ff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="200.0" y="101.5" fill="#00f0ff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">50M</text>
+    <!-- 100M -->
+    <line x1="260.5" y1="76.0" x2="252.6" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="244.7" y="111.8" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">100M</text>
+    <!-- 250M -->
+    <line x1="308.7" y1="115.0" x2="294.6" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="280.4" y="140.7" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">250M</text>
+    <!-- 500M -->
+    <line x1="335.0" y1="171.3" x2="317.4" y2="175.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.8" y="182.3" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">500M</text>
+    <!-- 1G -->
+    <line x1="333.9" y1="233.4" x2="316.4" y2="229.0" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.0" y="228.2" fill="#c084fc" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1G</text>
+    <!-- 1.25G+ -->
+    <line x1="305.7" y1="288.7" x2="291.9" y2="277.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="278.1" y="269.1" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1.25G+</text>
+  </g>
+
+  <!-- Aro Interno de Alta Tecnologia com Ranhuras -->
+  <circle cx="200" cy="200" r="82" fill="none" stroke="#00d2ff" stroke-width="2" opacity="0.5" stroke-dasharray="6 3" />
+  <!-- Marcador Ciano Topo (12h) e Base -->
+  <rect x="198.5" y="112" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+  <rect x="198.5" y="278" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+
+  <!-- 8. ARCO DINÂMICO DE PROGRESSO DA VELOCIDADE (SWEEP 260°, R=138, COMPRIMENTO=626.2) -->
+  <!-- Trilha Fundo -->
+  <circle cx="200" cy="200" r="138" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(140 200 200)" />
+  <!-- Trilha Ativa Iluminada -->
+  <circle id="hero-gauge-arc-progress" cx="200" cy="200" r="138" fill="none" stroke="url(#dialArcGrad_hero-gauge-needle)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="626.2" stroke-linecap="round" transform="rotate(140 200 200)" class="transition-all duration-150" filter="drop-shadow(0 0 8px #00d2ff)" />
+
+  <!-- 9. ENGRENAGEM CENTRAL CIANO GIRATÓRIA (18 DENTES) -->
+  <g class="cockpit-center-gear">
+    <circle cx="200" cy="200" r="62" fill="none" stroke="#0284c7" stroke-width="4.2" stroke-dasharray="5.4 5.4" opacity="0.7" filter="drop-shadow(0 0 3px #0284c7)" />
+    <circle cx="200" cy="200" r="56" fill="none" stroke="#0369a1" stroke-width="1.2" opacity="0.45" />
+  </g>
+
+  <!-- 10. PONTEIRO NEON LARANJA FLAMEJANTE (COM BRILHO E NÚCLEO) -->
+  <g id="hero-gauge-needle" class="cockpit-needle-group origin-center transition-transform" style="transform-origin: 200px 200px; transform: rotate(-130deg);">
+    <!-- Halo de Brilho Flamejante Externo do Ponteiro -->
+    <polygon points="193,200 200,68 207,200 200,224" fill="#ff6d00" opacity="0.35" filter="drop-shadow(0 0 10px #ff3d00)" />
+    <!-- Corpo Principal do Ponteiro Laranja -->
+    <polygon points="195.5,200 200,74 204.5,200 200,220" fill="url(#needleOrangeFireGrad_hero-gauge-needle)" filter="drop-shadow(0 0 6px #ff6d00)" />
+    <!-- Núcleo Filamentar Amarelo/Branco Incandescente -->
+    <line x1="200" y1="195" x2="200" y2="82" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="200" y1="195" x2="200" y2="90" stroke="#ffe57f" stroke-width="2.8" stroke-linecap="round" opacity="0.8" />
+    <!-- Contra-peso Traseiro -->
+    <polygon points="197,200 200,226 203,200" fill="#ff3d00" />
+  </g>
+
+  <!-- 11. CUBO CENTRAL METÁLICO EM DEGRADÊ AZUL & CAPA DE FIXAÇÃO -->
+  <circle cx="200" cy="200" r="38" fill="url(#centerHubRadialBg_hero-gauge-needle)" stroke="#00d2ff" stroke-width="2" />
+  <circle cx="200" cy="200" r="30" fill="#011024" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" />
+  <circle cx="200" cy="200" r="14" fill="#00d2ff" opacity="0.35" />
+  <circle cx="200" cy="200" r="7" fill="#00f0ff" filter="drop-shadow(0 0 4px #00f0ff)" />
+</svg>
+
+                <!-- AURA / 3 ONDAS RADIANTES DO BOTÃO CENTRAL -->
+                <div class="nperf-button-halo-wrapper">
+                  <div class="pulse-halo pulse-halo-1"></div>
+                  <div class="pulse-halo pulse-halo-2"></div>
+                  <div class="pulse-halo pulse-halo-3"></div>
+                </div>
+
+                <!-- BADGE CENTRAL LIVE TELEMETRIA -->
+                <div class="hero-gauge-center-badge shadow-md">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-emerald mb-0.5"></div>
+                  <span class="text-[9px] font-black tracking-widest text-white uppercase">LIVE</span>
+                </div>
+
+                <!-- DISPLAY DIGITAL CENTRAL FIXO (VALOR ABAIXO DO MBPS) -->
+                <div class="hero-gauge-center-display">
+                  <span class="nperf-speed-unit">
+                    MBPS
+                  </span>
+                  <span id="hero-gauge-speed-val" class="nperf-speed-value">
+                    584.20
+                  </span>
+                  <span class="nperf-speed-brand">
+                    ANECTTA <span>NETPULSE</span>
+                  </span>
+                </div>
+              </div>
+
+
+              <!-- CHAMADA PARA O ANECTTA NETPULSE & BOTÃO PARA O VELOCÍMETRO -->
+              <div class="mt-8 sm:mt-10 text-center max-w-md px-2 relative z-10 flex flex-col items-center">
+                <h3 class="text-xl sm:text-2xl font-black tracking-tight mb-1 brand-netpulse">
+                  <span class="brand-word-anectta">Anectta</span><span class="brand-word-netpulse">NetPulse</span>
+                </h3>
+                <p class="text-xs text-slate-500 mb-3.5 whitespace-normal sm:whitespace-nowrap">
+                  Teste a velocidade, latência e estabilidade da sua internet corporativa agora mesmo.
+                </p>
+                <a href="#velocimetro" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl btn-emergency text-xs sm:text-sm font-bold text-white shadow-md hover:shadow-lg transition-all group">
+                  <svg class="w-4 h-4 text-sky-200 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 3"/>
+                  </svg>
+                  <span>TESTAR MINHA VELOCIDADE</span>
+                  <svg class="w-3.5 h-3.5 text-sky-200 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         4. BLOCO "VOCÊ TEM ALGUM DESTES PROBLEMAS?"
+         ==================================================== -->
+    <section class="py-16 bg-slate-50/70 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            DIAGNÓSTICO IMEDIATO
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Sua empresa tem algum destes problemas hoje?
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2">
+            Clique no problema que está afetando sua equipe para direcionar a um especialista de TI:
+          </p>
+        </div>
+
+        <!-- GRID DOS 16 PROBLEMAS REAIS -->
+        <div id="problem-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mb-10">
+          <!-- Renderizado via JavaScript (data.js) -->
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gradient-to-r from-sky-50 via-white to-sky-50 border border-sky-200 text-center max-w-3xl mx-auto shadow-sm">
+          <p class="text-base sm:text-lg font-bold text-slate-900">
+            "Se o problema acontece na tela ou na rede, existe uma enorme chance de conseguirmos diagnosticar e resolver remotamente."
+          </p>
+          <p class="text-xs text-slate-500 mt-1">
+            Evite horas de trabalho paralisadas aguardando a chegada de um técnico.
+          </p>
+          <div class="mt-4">
+            <button type="button" class="btn-open-support px-6 py-2.5 rounded-xl btn-emergency text-xs font-bold text-white inline-flex items-center gap-2 shadow-sm">
+              SOLICITAR DIAGNÓSTICO REMOTO AGORA
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         TELEMETRIA DE VELOCIDADE DE INTERNET (VELOCÍMETRO)
+         ==================================================== -->
+    <section id="velocimetro" class="pt-10 pb-20 border-t border-slate-200 bg-white relative overflow-hidden scroll-mt-20 lg:scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-5 sm:mb-6">
+          <h2 class="text-3xl sm:text-4xl font-black brand-netpulse">
+            <span class="brand-word-anectta">Anectta</span><span class="brand-word-netpulse">NetPulse</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2">
+            Meça com alta precisão a latência (ping), o jitter e a velocidade real de download e upload da sua conexão para saber se sua empresa está pronta para operações de TI remotas de alta performance:
+          </p>
+        </div>
+
+        <!-- PAINEL CENTRAL DO VELOCÍMETRO -->
+        <div class="nperf-console-container px-6 pt-5 pb-5 sm:px-8 sm:pt-6 sm:pb-7 lg:px-10 lg:pt-7 lg:pb-9 max-w-5xl mx-auto relative overflow-hidden bg-white border border-slate-200 shadow-xl">
+          
+
+          <!-- ÁREA CENTRAL INTEGRADA: TELEMETRIA LATERAL & VELOCÍMETRO -->
+          <div class="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-[57px] xl:gap-[57px] relative z-10 -mt-1 mb-4 sm:-mt-1 sm:mb-5">
+            
+            <!-- Coluna Esquerda: FLUXO REAL & LATÊNCIA (2 Cards Quadrados) -->
+            <div class="flex flex-row lg:flex-col gap-3.5 justify-center items-center shrink-0 order-2 lg:order-1">
+              
+              <!-- Card 1: Gráfico de Fluxo em Tempo Real (Quadrado) -->
+              <div id="nperf-card-flow" class="nperf-metric-card nperf-telemetry-compact flex flex-col justify-between relative overflow-hidden bg-slate-50 border border-slate-200">
+                <div class="flex items-center justify-between text-xs font-mono text-sky-600 mb-0.5 font-bold">
+                  <div class="flex items-center gap-1 font-bold">
+                    <div class="w-5 h-5 rounded-md bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center text-white shadow-sm shrink-0">
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+                    </div>
+                    <span class="text-[9px] tracking-wide font-bold">FLUXO</span>
+                  </div>
+                  <span class="text-[8px] px-1.5 py-0.5 rounded bg-sky-100 text-sky-700 border border-sky-200 font-bold flex items-center gap-0.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse"></span> LIVE
+                  </span>
+                </div>
+                <div class="relative flex-1 h-[34px] max-h-[38px] w-full flex items-center justify-center my-0.5 overflow-hidden">
+                  <div class="nperf-chart-grid">
+                    <div class="nperf-chart-grid-line"></div>
+                    <div class="nperf-chart-grid-line"></div>
+                  </div>
+                  <canvas id="nperf-chart-canvas" class="nperf-chart-canvas w-full h-full"></canvas>
+                </div>
+                <div class="flex items-center justify-between text-[9px] font-mono text-slate-500 pt-1 border-t border-slate-200 mt-auto font-medium">
+                  <span>Throughput</span>
+                  <span class="text-sky-600 font-bold">Ao Vivo</span>
+                </div>
+              </div>
+
+              <!-- Card 2: Latência & Jitter (Quadrado) -->
+              <div id="nperf-card-ping" class="nperf-metric-card nperf-telemetry-compact flex flex-col justify-between bg-slate-50 border border-slate-200">
+                <div class="flex items-center justify-between text-xs font-mono text-amber-600 mb-0.5 font-bold">
+                  <div class="flex items-center gap-1 font-bold">
+                    <div class="w-5 h-5 rounded-md bg-gradient-to-b from-amber-400 to-amber-600 flex items-center justify-center text-white shadow-sm shrink-0">
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span class="text-[9px] tracking-wide font-bold">LATÊNCIA</span>
+                  </div>
+                  <span class="text-[8px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200 font-bold">PING</span>
+                </div>
+                <div class="my-auto py-0.5">
+                  <div class="flex items-baseline gap-1">
+                    <span id="speed-metric-ping" class="text-2xl font-black font-mono text-slate-900 tracking-tight leading-none">--</span>
+                    <span class="text-[11px] font-mono text-amber-600 font-bold">ms</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between text-[9px] font-mono pt-1 border-t border-slate-200 mt-auto font-medium">
+                  <span class="text-slate-400">JITTER:</span>
+                  <div>
+                    <span id="speed-metric-jitter" class="text-amber-700 font-bold">--</span>
+                    <span class="text-slate-400 ml-0.5">ms</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Coluna Central: O GAUGE / VELOCÍMETRO CIRCULAR -->
+            <div class="flex flex-col items-center justify-center py-2 relative order-1 lg:order-2 shrink-0">
+              
+              <div class="nperf-gauge-wrapper flex items-center justify-center select-none">
+                <!-- CÍRCULOS CONCÊNTRICOS POR FORA DO VELOCÍMETRO -->
+                <div class="nperf-gauge-external-rings pointer-events-none">
+                  <div class="nperf-ext-ring nperf-ext-ring-1"></div>
+                  <div class="nperf-ext-ring nperf-ext-ring-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-1"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-3"></div>
+                </div>
+
+                <svg viewBox="0 0 400 400" class="w-full h-full overflow-visible cockpit-speedometer-svg" style="overflow: visible;">
+  <defs>
+    <!-- Fundo da Base Externa em Degradê Azul Cibernético -->
+    <radialGradient id="baseBlueRadialBg_nperf-needle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#075985" />
+      <stop offset="35%" stop-color="#034575" />
+      <stop offset="70%" stop-color="#022852" />
+      <stop offset="100%" stop-color="#01142e" />
+    </radialGradient>
+
+    <!-- Gradiente Fundo do Dial Central (Azul Profundo Cockpit com Luminosidade Atenuada) -->
+    <radialGradient id="dialDarkRadialBg_nperf-needle" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.45" />
+      <stop offset="25%" stop-color="#035482" />
+      <stop offset="60%" stop-color="#052c52" />
+      <stop offset="85%" stop-color="#021a36" />
+      <stop offset="100%" stop-color="#010d1c" />
+    </radialGradient>
+
+    <!-- Gradiente do Cubo Central -->
+    <radialGradient id="centerHubRadialBg_nperf-needle" cx="45%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="55%" stop-color="#063868" />
+      <stop offset="100%" stop-color="#021226" />
+    </radialGradient>
+
+    <!-- Gradiente do Ponteiro Neon Laranja Flamejante -->
+    <linearGradient id="needleOrangeFireGrad_nperf-needle" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff3d00" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#ff6d00" />
+      <stop offset="80%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ffe57f" />
+    </linearGradient>
+
+    <!-- Gradiente do Anel Neon Ciano Interno (Mais Escurecido) -->
+    <linearGradient id="haloCyanInnerGrad_nperf-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#0369a1" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+
+    <!-- Gradiente do Anel Neon Ciano Externo -->
+    <linearGradient id="haloCyanGrad_nperf-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Gradiente da Trilha do Arco Ativo -->
+    <linearGradient id="dialArcGrad_nperf-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. BASE CIRCULAR DE VIDRO ESCURO COM DEGRADÊ AZUL COCKPIT -->
+  <circle cx="200" cy="200" r="194" fill="url(#baseBlueRadialBg_nperf-needle)" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- 2. ANEL DE NEON CIANO EXTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="184" fill="none" stroke="url(#haloCyanGrad_nperf-needle)" stroke-width="4.5" class="cockpit-neon-cyan-ring" />
+  <circle cx="200" cy="200" r="188" fill="none" stroke="#00d2ff" stroke-width="1.2" opacity="0.4" />
+
+  <!-- 3. ANEL DE HALO CIANO NEON INTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#haloCyanInnerGrad_nperf-needle)" stroke-width="3.2" class="cockpit-neon-cyan-inner-ring" />
+
+  <!-- 4. ASAS LATERAIS COM 12 BARRAS DE LED CADA (ILUMINAÇÃO DINÂMICA) -->
+  <!-- Asa Esquerda -->
+  <g class="cockpit-wing-left">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 128 78 L 88 78 L 56 160 L 56 240 L 88 322 L 128 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-left-0" x="96" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-1" x="86" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-2" x="78" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-3" x="72" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-4" x="68" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-5" x="66" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-6" x="66" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-7" x="68" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-8" x="72" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-9" x="78" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-10" x="86" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-11" x="96" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- Asa Direita -->
+  <g class="cockpit-wing-right">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 272 78 L 312 78 L 344 160 L 344 240 L 312 322 L 272 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-right-0" x="278" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-1" x="286" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-2" x="292" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-3" x="297" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-4" x="300" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-5" x="301" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-6" x="301" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-7" x="300" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-8" x="297" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-9" x="292" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-10" x="286" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-11" x="278" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- 5. MOSTRADOR PRINCIPAL DO DIAL (GRADIENTE RADIAL AZUL EM DEGRADÊ) -->
+  <circle cx="200" cy="200" r="150" fill="url(#dialDarkRadialBg_nperf-needle)" stroke="#00d2ff" stroke-width="2.5" opacity="0.98" />
+  <circle cx="200" cy="200" r="148" fill="none" stroke="rgba(0, 210, 255, 0.4)" stroke-width="1" />
+
+  <!-- 6. ONDAS RADIANTES EXPANSIVAS EMITIDAS DO CENTRO (RADAR HUD PULSE) -->
+  <g class="cockpit-radiant-pulse-waves" pointer-events="none">
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="2" class="cockpit-wave-ring cockpit-wave-1" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#38bdf8" stroke-width="1.8" class="cockpit-wave-ring cockpit-wave-2" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00f0ff" stroke-width="1.5" class="cockpit-wave-ring cockpit-wave-3" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="1.2" class="cockpit-wave-ring cockpit-wave-4" />
+  </g>
+
+  <!-- 7. MARCAÇÕES DO DIAL / TICKS & NÚMEROS (0, 1M, 5M, 10M, 25M, 50M, 100M, 250M, 500M, 1G+) -->
+  <!-- Subticks Intermediários -->
+  <g class="cockpit-subticks">
+    <line x1="84.9" y1="276.2" x2="91.6" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="77.0" y1="262.7" x2="87.7" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="70.7" y1="248.3" x2="78.2" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="63.2" y1="218.0" x2="71.1" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="62.0" y1="202.4" x2="74.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="62.6" y1="186.8" x2="70.6" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="69.1" y1="156.2" x2="76.7" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="74.9" y1="141.7" x2="85.8" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="82.3" y1="127.9" x2="89.2" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="101.6" y1="103.3" x2="107.3" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="113.2" y1="92.8" x2="120.7" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="125.9" y1="83.6" x2="130.2" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="153.9" y1="69.9" x2="156.6" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="169.0" y1="65.5" x2="171.7" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="184.4" y1="62.9" x2="185.3" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="215.6" y1="62.9" x2="214.7" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="231.0" y1="65.5" x2="228.3" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="246.1" y1="69.9" x2="243.4" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="274.1" y1="83.6" x2="269.8" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="286.8" y1="92.8" x2="279.3" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="298.4" y1="103.3" x2="292.7" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="317.7" y1="127.9" x2="310.8" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="325.1" y1="141.7" x2="314.2" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="330.9" y1="156.2" x2="323.3" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="337.4" y1="186.8" x2="329.4" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="338.0" y1="202.4" x2="326.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="336.8" y1="218.0" x2="328.9" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="329.3" y1="248.3" x2="321.8" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="323.0" y1="262.7" x2="312.3" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="315.1" y1="276.2" x2="308.4" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+  </g>
+
+  <!-- Ticks Principais & Valores -->
+  <g class="cockpit-major-ticks">
+    <!-- 0 -->
+    <line x1="94.3" y1="288.7" x2="108.1" y2="277.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="121.9" y="269.1" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">0</text>
+    <!-- 1M -->
+    <line x1="66.1" y1="233.4" x2="83.6" y2="229.0" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="101.0" y="228.2" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1M</text>
+    <!-- 5M -->
+    <line x1="65.0" y1="171.3" x2="82.6" y2="175.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="100.2" y="182.3" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">5M</text>
+    <!-- 10M -->
+    <line x1="91.3" y1="115.0" x2="105.4" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="119.6" y="140.7" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">10M</text>
+    <!-- 25M -->
+    <line x1="139.5" y1="76.0" x2="147.4" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="155.3" y="111.8" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">25M</text>
+    <!-- 50M -->
+    <line x1="200.0" y1="62.0" x2="200.0" y2="80.0" stroke="#00f0ff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="200.0" y="101.5" fill="#00f0ff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">50M</text>
+    <!-- 100M -->
+    <line x1="260.5" y1="76.0" x2="252.6" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="244.7" y="111.8" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">100M</text>
+    <!-- 250M -->
+    <line x1="308.7" y1="115.0" x2="294.6" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="280.4" y="140.7" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">250M</text>
+    <!-- 500M -->
+    <line x1="335.0" y1="171.3" x2="317.4" y2="175.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.8" y="182.3" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">500M</text>
+    <!-- 1G -->
+    <line x1="333.9" y1="233.4" x2="316.4" y2="229.0" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.0" y="228.2" fill="#c084fc" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1G</text>
+    <!-- 1.25G+ -->
+    <line x1="305.7" y1="288.7" x2="291.9" y2="277.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="278.1" y="269.1" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1.25G+</text>
+  </g>
+
+  <!-- Aro Interno de Alta Tecnologia com Ranhuras -->
+  <circle cx="200" cy="200" r="82" fill="none" stroke="#00d2ff" stroke-width="2" opacity="0.5" stroke-dasharray="6 3" />
+  <!-- Marcador Ciano Topo (12h) e Base -->
+  <rect x="198.5" y="112" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+  <rect x="198.5" y="278" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+
+  <!-- 8. ARCO DINÂMICO DE PROGRESSO DA VELOCIDADE (SWEEP 260°, R=138, COMPRIMENTO=626.2) -->
+  <!-- Trilha Fundo -->
+  <circle cx="200" cy="200" r="138" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(140 200 200)" />
+  <!-- Trilha Ativa Iluminada -->
+  <circle id="nperf-arc-progress" cx="200" cy="200" r="138" fill="none" stroke="url(#dialArcGrad_nperf-needle)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="626.2" stroke-linecap="round" transform="rotate(140 200 200)" class="transition-all duration-150" filter="drop-shadow(0 0 8px #00d2ff)" />
+
+  <!-- 9. ENGRENAGEM CENTRAL CIANO GIRATÓRIA (18 DENTES) -->
+  <g class="cockpit-center-gear">
+    <circle cx="200" cy="200" r="62" fill="none" stroke="#0284c7" stroke-width="4.2" stroke-dasharray="5.4 5.4" opacity="0.7" filter="drop-shadow(0 0 3px #0284c7)" />
+    <circle cx="200" cy="200" r="56" fill="none" stroke="#0369a1" stroke-width="1.2" opacity="0.45" />
+  </g>
+
+  <!-- 10. PONTEIRO NEON LARANJA FLAMEJANTE (COM BRILHO E NÚCLEO) -->
+  <g id="nperf-needle" class="cockpit-needle-group origin-center transition-transform" style="transform-origin: 200px 200px; transform: rotate(-130deg);">
+    <!-- Halo de Brilho Flamejante Externo do Ponteiro -->
+    <polygon points="193,200 200,68 207,200 200,224" fill="#ff6d00" opacity="0.35" filter="drop-shadow(0 0 10px #ff3d00)" />
+    <!-- Corpo Principal do Ponteiro Laranja -->
+    <polygon points="195.5,200 200,74 204.5,200 200,220" fill="url(#needleOrangeFireGrad_nperf-needle)" filter="drop-shadow(0 0 6px #ff6d00)" />
+    <!-- Núcleo Filamentar Amarelo/Branco Incandescente -->
+    <line x1="200" y1="195" x2="200" y2="82" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="200" y1="195" x2="200" y2="90" stroke="#ffe57f" stroke-width="2.8" stroke-linecap="round" opacity="0.8" />
+    <!-- Contra-peso Traseiro -->
+    <polygon points="197,200 200,226 203,200" fill="#ff3d00" />
+  </g>
+
+  <!-- 11. CUBO CENTRAL METÁLICO EM DEGRADÊ AZUL & CAPA DE FIXAÇÃO -->
+  <circle cx="200" cy="200" r="38" fill="url(#centerHubRadialBg_nperf-needle)" stroke="#00d2ff" stroke-width="2" />
+  <circle cx="200" cy="200" r="30" fill="#011024" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" />
+  <circle cx="200" cy="200" r="14" fill="#00d2ff" opacity="0.35" />
+  <circle cx="200" cy="200" r="7" fill="#00f0ff" filter="drop-shadow(0 0 4px #00f0ff)" />
+</svg>
+
+                <!-- AURA / 3 ONDAS RADIANTES DO BOTÃO CENTRAL (PERMANECE ATIVA E CONTÍNUA O TEMPO TODO) -->
+                <div class="nperf-button-halo-wrapper">
+                  <div class="pulse-halo pulse-halo-1"></div>
+                  <div class="pulse-halo pulse-halo-2"></div>
+                  <div class="pulse-halo pulse-halo-3"></div>
+                </div>
+
+                <!-- BOTÃO CENTRAL "INICIAR TESTE" (MAIOR E DESTACADO) -->
+                <button type="button" id="nperf-center-start-btn" class="nperf-center-start-btn group" title="Iniciar Telemetria">
+                  <svg class="w-6 h-6 text-white ml-0.5 mb-0.5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  <span class="text-[10px] font-black tracking-widest text-white uppercase group-hover:text-sky-200">INICIAR</span>
+                </button>
+
+                <!-- DISPLAY DIGITAL CENTRAL FIXO (VALOR ABAIXO DO MBPS) -->
+                <div id="nperf-center-display" class="nperf-center-display">
+                  <span id="speed-unit-label" class="nperf-speed-unit">
+                    MBPS
+                  </span>
+                  <span id="speed-current-val" class="nperf-speed-value">
+                    0.00
+                  </span>
+                  <span class="nperf-speed-brand">
+                    ANECTTA <span>NETPULSE</span>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Coluna Direita: DOWNLOAD & UPLOAD (2 Cards Quadrados) -->
+            <div class="flex flex-row lg:flex-col gap-3.5 justify-center items-center shrink-0 order-3 lg:order-3">
+
+              <!-- Card 3: Download (Quadrado) -->
+              <div id="nperf-card-download" class="nperf-metric-card nperf-telemetry-compact flex flex-col justify-between bg-slate-50 border border-slate-200">
+                <div class="flex items-center justify-between text-xs font-mono text-sky-600 mb-0.5 font-bold">
+                  <div class="flex items-center gap-1 font-bold">
+                    <div class="w-5 h-5 rounded-md bg-gradient-to-b from-sky-400 to-sky-600 flex items-center justify-center text-white shadow-sm shrink-0">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    </div>
+                    <span class="text-[9px] tracking-wide font-bold">DOWNLOAD</span>
+                  </div>
+                  <span class="text-[8px] px-1 py-0.5 rounded bg-sky-100 text-sky-700 border border-sky-200 font-bold">DOWN</span>
+                </div>
+                <div class="my-auto py-0.5">
+                  <div class="flex items-baseline gap-1">
+                    <span id="speed-metric-download" class="text-2xl font-black font-mono text-slate-900 tracking-tight leading-none">--</span>
+                    <span class="text-[11px] font-mono text-sky-600 font-bold">Mb/s</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between text-[9px] font-mono pt-1 border-t border-slate-200 mt-auto font-medium">
+                  <span class="text-slate-400">PICO:</span>
+                  <div>
+                    <span id="nperf-peak-download" class="text-sky-700 font-bold">--</span>
+                    <span class="text-slate-400 ml-0.5">Mb/s</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4: Upload (Quadrado) -->
+              <div id="nperf-card-upload" class="nperf-metric-card nperf-telemetry-compact flex flex-col justify-between bg-slate-50 border border-slate-200">
+                <div class="flex items-center justify-between text-xs font-mono text-purple-600 mb-0.5 font-bold">
+                  <div class="flex items-center gap-1 font-bold">
+                    <div class="w-5 h-5 rounded-md bg-gradient-to-b from-purple-500 to-purple-700 flex items-center justify-center text-white shadow-sm shrink-0">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                    </div>
+                    <span class="text-[9px] tracking-wide font-bold">UPLOAD</span>
+                  </div>
+                  <span class="text-[8px] px-1 py-0.5 rounded bg-purple-100 text-purple-700 border border-purple-200 font-bold">UP</span>
+                </div>
+                <div class="my-auto py-0.5">
+                  <div class="flex items-baseline gap-1">
+                    <span id="speed-metric-upload" class="text-2xl font-black font-mono text-slate-900 tracking-tight leading-none">--</span>
+                    <span class="text-[11px] font-mono text-purple-600 font-bold">Mb/s</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between text-[9px] font-mono pt-1 border-t border-slate-200 mt-auto font-medium">
+                  <span class="text-slate-400">PICO:</span>
+                  <div>
+                    <span id="nperf-peak-upload" class="text-purple-700 font-bold">--</span>
+                    <span class="text-slate-400 ml-0.5">Mb/s</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Data e Hora em Tempo Real Centralizada na Parte de Baixo do Velocímetro -->
+          <div class="mt-4 flex flex-col items-center gap-2 z-10 relative">
+            <div class="flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-xs font-mono text-slate-600 shadow-sm">
+              <svg class="w-3.5 h-3.5 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              <span class="text-slate-400 font-medium">DATA/HORA:</span>
+              <span id="speed-client-datetime" class="speed-live-datetime text-slate-800 font-bold font-mono">--/--/---- --:--:--</span>
+            </div>
+
+            <!-- Localização, Provedor & IP Público Posicionados Logo Abaixo da Data e Hora -->
+            <div class="flex flex-wrap items-center justify-center gap-x-3.5 gap-y-1 text-xs font-mono text-slate-500 pt-1">
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">LOCAL:</span>
+                <span id="speed-client-location" class="text-slate-700 font-bold">Detectando...</span>
+              </div>
+              <span class="text-slate-300 hidden sm:inline">•</span>
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">PROVEDOR:</span>
+                <span id="speed-client-isp" class="text-sky-600 font-bold">Detectando...</span>
+              </div>
+              <span class="text-slate-300 hidden sm:inline">•</span>
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">IP PÚBLICO:</span>
+                <span id="speed-client-ip" class="text-slate-800 font-bold">---</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         29. GRANDE ARGUMENTO COMERCIAL
+         ==================================================== -->
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-panel p-8 sm:p-12 border border-slate-200 relative overflow-hidden bg-white shadow-md">
+          <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="max-w-3xl">
+            <span class="text-xs font-mono uppercase tracking-widest text-sky-600 font-bold">
+              O NOVO PARADIGMA DA TI CORPORATIVA
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-6 leading-tight">
+              Você não precisa de um técnico na sua empresa.<br>
+              <span class="text-sky-600">Você precisa que sua tecnologia funcione.</span>
+            </h2>
+            
+            <p class="text-base text-slate-600 leading-relaxed mb-4">
+              Grande parte dos problemas de TI não exige deslocamento físico. Com acesso remoto autorizado, nossa equipe pode diagnosticar, configurar, corrigir e acompanhar computadores, sistemas, servidores e redes à distância.
+            </p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-y border-slate-200 my-6">
+              <div>
+                <div class="text-2xl font-black text-sky-600 font-mono">0 min</div>
+                <div class="text-xs text-slate-500 mt-0.5 font-medium">Tempo em trânsito</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black text-emerald-600 font-mono">-65%</div>
+                <div class="text-xs text-slate-500 mt-0.5 font-medium">Custo operacional</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black text-sky-600 font-mono">100%</div>
+                <div class="text-xs text-slate-500 mt-0.5 font-medium">Acompanhado na tela</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black text-emerald-600 font-mono">Brasil</div>
+                <div class="text-xs text-slate-500 mt-0.5 font-medium">Cobertura nacional</div>
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-600">
+              Você economiza tempo. Reduz custos operacionais de visita. Evita interrupções no expediente. E mantém sua equipe produzindo com tranquilidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         13. COMPARAÇÃO: TÉCNICO PRESENCIAL x SUPORTE REMOTO
+         ==================================================== -->
+    <section class="py-20 border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            COMPARAÇÃO TRANSPARENTE
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Por que pagar pelo deslocamento se o problema pode ser resolvido na tela?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Veja a diferença direta entre o modelo analógico antigo e a Central de Operações Remota ANECTTA:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          
+          <!-- Lado 1: Técnico Presencial Tradicional -->
+          <div class="p-8 rounded-2xl bg-rose-50/40 border border-rose-200 relative">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-rose-200">
+              <h3 class="text-lg font-bold text-rose-800">Técnico Presencial Tradicional</h3>
+              <span class="text-xs font-mono text-rose-600 font-semibold">MODELO ANTIGO</span>
+            </div>
+            <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-3">
+                <span class="text-rose-600 font-bold">✕</span>
+                <span><strong>Espera por deslocamento:</strong> Horas perdidas com o colaborador inoperante até o técnico chegar.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-rose-600 font-bold">✕</span>
+                <span><strong>Cobrança de taxa de visita:</strong> Custos adicionais de transporte, estacionamento e hora técnica presencial.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-rose-600 font-bold">✕</span>
+                <span><strong>Interrupção física:</strong> Necessidade de receber terceiros no escritório e ceder espaço físico.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-rose-600 font-bold">✕</span>
+                <span><strong>Disponibilidade restrita:</strong> Difícil atender múltiplas filiais ou colaboradores em home office.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-rose-600 font-bold">✕</span>
+                <span><strong>Sem histórico transparente:</strong> Ausência de telemetria ou registro digital padronizado de ações.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Lado 2: Suporte Remoto ANECTTA -->
+          <div class="glass-panel-glow p-8 rounded-2xl bg-white border-2 border-sky-500 shadow-xl relative">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-sky-200">
+              <h3 class="text-lg font-bold text-sky-700 flex items-center gap-2">
+                Suporte Remoto ANECTTA
+                <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-emerald"></span>
+              </h3>
+              <span class="text-xs font-mono font-bold text-emerald-700">CENTRAL DE OPERAÇÕES MODERNA</span>
+            </div>
+            <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-start gap-3">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Início em minutos:</strong> Diagnóstico imediato sem depender de trânsito ou agendamento de visita.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Sem custo de visita:</strong> Você paga apenas pela resolução técnica e inteligência aplicada.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Acompanhamento total na tela:</strong> Você visualiza todas as ações e tem o poder de desconectar a qualquer segundo.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Cobertura geográfica ampla:</strong> Atendimento idêntico na sede, filiais ou para equipes em home office.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Atendimento simultâneo:</strong> Vários especialistas podem atuar paralelamente em múltiplos computadores.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         5. COMO FUNCIONA (4 PASSOS VISUAIS)
+         ==================================================== -->
+    <section id="como-funciona" class="py-20 bg-slate-50/70 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            SIMPLICIDADE E CONTROLE
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Como funciona o atendimento remoto em 4 passos:
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Rápido, transparente e sem necessidade de conhecimento técnico por parte do seu colaborador.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+          
+          <!-- Passo 01 -->
+          <div class="glass-panel spotlight-card p-6 border border-slate-200 bg-white flex flex-col justify-between reveal-on-scroll shadow-sm">
+            <div>
+              <span class="text-3xl font-black text-sky-600 font-mono block mb-3">01</span>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">SOLICITE</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Abra um chamado instantâneo pelo site, WhatsApp ou pelo portal do cliente informando o sintoma do problema.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-sky-600 font-semibold">
+              ● Triagem em minutos
+            </div>
+          </div>
+
+          <!-- Passo 02 -->
+          <div class="glass-panel spotlight-card p-6 border border-slate-200 bg-white flex flex-col justify-between reveal-on-scroll shadow-sm">
+            <div>
+              <span class="text-3xl font-black text-sky-600 font-mono block mb-3">02</span>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">AUTORIZE</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Abra a ferramenta homologada (AnyDesk, TeamViewer ou RustDesk) e informe o código temporário gerado em sua tela.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-emerald-600 font-semibold">
+              ● Consentimento ativo
+            </div>
+          </div>
+
+          <!-- Passo 03 -->
+          <div class="glass-panel spotlight-card p-6 border border-slate-200 bg-white flex flex-col justify-between reveal-on-scroll shadow-sm">
+            <div>
+              <span class="text-3xl font-black text-sky-600 font-mono block mb-3">03</span>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">RESOLVEMOS</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Nosso especialista de TI estabelece a conexão criptografada, executa os testes e aplica a correção necessária.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-sky-600 font-semibold">
+              ● Ação especializada
+            </div>
+          </div>
+
+          <!-- Passo 04 -->
+          <div class="glass-panel spotlight-card p-6 border border-slate-200 bg-white flex flex-col justify-between reveal-on-scroll shadow-sm">
+            <div>
+              <span class="text-3xl font-black text-emerald-600 font-mono block mb-3">04</span>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">ACOMPANHE</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Você assiste a cada comando em sua própria tela e pode encerrar a sessão com um único clique a qualquer instante.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-emerald-600 font-semibold">
+              ● Controle total do cliente
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <button type="button" class="btn-open-support px-8 py-4 rounded-xl btn-emergency text-sm font-bold text-white shadow-lg">
+            RESOLVER MEU PROBLEMA AGORA
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         6. SEGURANÇA DO ACESSO REMOTO
+         ==================================================== -->
+    <section id="seguranca" class="py-20 border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5">
+            <span class="text-xs font-mono uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 font-semibold">
+              BOAS PRÁTICAS & PRIVACIDADE
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 leading-tight">
+              Remoto não significa desprotegido.
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 mt-4 leading-relaxed">
+              Tratamos a infraestrutura e os dados da sua organização com o mais alto rigor operacional. Nossas rotinas de acesso remoto são desenhadas para que o cliente mantenha sempre a soberania sobre seus equipamentos.
+            </p>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 mt-6 space-y-2 text-xs text-slate-600">
+              <div class="text-slate-900 font-bold flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Compromisso com a LGPD e Ética Corporativa
+              </div>
+              <p>
+                Não armazenamos senhas pessoais de usuários, não acessamos documentos particulares e registramos as atividades realizadas para auditoria do gestor.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARDS DE PILARES DE SEGURANÇA -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <div class="glass-panel spotlight-card p-6 border-2 border-sky-300 bg-white hover:border-sky-500 transition shadow-md reveal-on-scroll">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <rect x="5" y="11" width="14" height="10" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 11V7a4 4 0 018 0v4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Sigilo Garantido</h4>
+              <p class="text-xs font-semibold text-sky-600 mt-0.5">Controle de acesso rigoroso</p>
+              <p class="text-xs text-slate-500 mt-2">Nenhuma conexão inicia sem autorização prévia por código temporário. O usuário assiste cada ação na tela e pode encerrar a qualquer momento.</p>
+            </div>
+
+            <div class="glass-panel spotlight-card p-6 border-2 border-sky-300 bg-white hover:border-sky-500 transition shadow-md reveal-on-scroll">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <circle cx="18" cy="5" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="6" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="18" cy="19" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="font-bold text-slate-900 text-base">Acesso Remoto</h4>
+              <p class="text-xs font-semibold text-sky-600 mt-0.5">VPN criptografada TLS 256-bit</p>
+              <p class="text-xs text-slate-500 mt-2">Comunicação direta em túnel blindado ponta a ponta sem exposição de portas na rede e sem vulnerabilidades externas.</p>
+            </div>
+
+            <div class="glass-panel spotlight-card p-5 border border-slate-200 bg-white reveal-on-scroll shadow-sm">
+              <div class="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center mb-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Visibilidade em Tempo Real</h4>
+              <p class="text-xs text-slate-500 mt-1">O colaborador acompanha a movimentação do cursor e tarefas executadas diretamente em sua tela durante todo o chamado.</p>
+            </div>
+
+            <div class="glass-panel spotlight-card p-5 border border-slate-200 bg-white reveal-on-scroll shadow-sm">
+              <div class="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center mb-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">Encerramento com 1 Clique</h4>
+              <p class="text-xs text-slate-500 mt-1">O controle final é sempre do cliente. Ao clicar em 'Desconectar', o canal é destruído e não pode ser reaberto sem novo token.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SEÇÃO DE DESTAQUE: SUPORTE ESPECIALIZADO TI (JURÍDICO & GOVERNO)
+         ==================================================== -->
+    <section class="py-20 bg-slate-50/80 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="glass-panel p-8 sm:p-12 border border-slate-200 bg-white relative overflow-hidden mb-12 shadow-md">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div class="max-w-2xl">
+              <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-bold">
+                VERTICAL DEDICADA • ALTA ESPECIALIZAÇÃO
+              </span>
+              <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+                Suporte de TI Especializado para Advogados, Tribunais e Sistemas Fiscais
+              </h2>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+                Desenvolvemos procedimentos remotos dedicados para escritórios de advocacia, departamentos jurídicos, contabilidades e empresas que não podem perder prazos por falhas técnicas.
+              </p>
+            </div>
+            <div class="shrink-0 flex flex-col sm:flex-row gap-3">
+              <a href="suporte-advogados-sistemas-judiciais.html" class="px-5 py-3 rounded-xl btn-emergency text-xs font-bold text-white text-center shadow-md">
+                CONHECER SUPORTE JURÍDICO
+              </a>
+              <a href="sistemas-governamentais-ecac-conectividade.html" class="px-5 py-3 rounded-xl btn-secondary-tech text-xs font-bold text-slate-700 text-center">
+                PORTAIS .GOV & E-CAC
+              </a>
+            </div>
+          </div>
+
+          <!-- GRID DOS SERVIÇOS ESPECIALIZADOS -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-8 border-t border-slate-200 text-xs">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-sky-700 font-bold block mb-1">⚖️ Certificado Digital</span>
+              <p class="text-slate-600">Instalação e validação de e-CPF e e-CNPJ (Tokens A3, SmartCard e Nuvem) no Mac e Windows.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-sky-700 font-bold block mb-1">🏛️ Sistemas Judiciais</span>
+              <p class="text-slate-600">Ajuste fino de PJE, ESAJ, PROJUDI, SEEU, EPROC, PJeOffice e Shodô sem erros de Java.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-sky-700 font-bold block mb-1">🎙️ Audiências Virtuais</span>
+              <p class="text-slate-600">Calibração de webcam e microfone para LifeSize, Microsoft Teams, Google Meet e Zoom.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-sky-700 font-bold block mb-1">📑 Compressão de PDFs</span>
+              <p class="text-slate-600">Tratamento de mídias, corte de áudios/vídeos e redução de peso de PDFs para peticionar.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-emerald-700 font-bold block mb-1">🏢 Portais .gov & Fiscais</span>
+              <p class="text-slate-600">Conectividade Social ICP, e-CAC Receita Federal, Nota Fiscal eletrônica, SEFAZ, eSocial e INSS.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-emerald-700 font-bold block mb-1">🖨️ Impressoras & Scanners</span>
+              <p class="text-slate-600">Instalação remota de drivers, fila de impressão travada, Wi-Fi e digitalização em rede para PDF.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-emerald-700 font-bold block mb-1">⚡ Limpeza & Otimização</span>
+              <p class="text-slate-600">Remoção de vírus, malwares, eliminação de lentidão e calibração de inicialização.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-white transition shadow-sm">
+              <span class="text-emerald-700 font-bold block mb-1">📦 Office & Windows</span>
+              <p class="text-slate-600">Instalação e ativação oficial do Office em Mac e Windows, ativação de licenças e restauração remota.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         7. CATÁLOGO COMPLETO DE SERVIÇOS REMOTOS
+         ==================================================== -->
+    <section id="servicos" class="py-20 bg-white border-t border-slate-200 relative overflow-hidden">
+      <!-- Glow Decorativo de Fundo na Seção Serviços -->
+      <div class="hero-glow-orb -top-20 right-10 w-[520px] h-[520px] bg-sky-500/10 pointer-events-none"></div>
+      <div class="hero-glow-orb bottom-10 -left-20 w-[420px] h-[420px] bg-cyan-500/8 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- CABEÇALHO DA SEÇÃO SERVIÇOS: APRESENTAÇÃO + FOGUETES EM FORMAÇÃO DE VOO -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-12">
+          
+          <!-- COLUNA ESQUERDA: APRESENTAÇÃO DO CATÁLOGO DE SERVIÇOS E FILTROS -->
+          <div class="lg:col-span-7 text-center lg:text-left reveal-on-scroll">
+            <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200 font-semibold shadow-sm inline-flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
+              CATÁLOGO OPERACIONAL COMPLETO
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-4 leading-tight">
+              Serviços Especializados de TI — <span class="gradient-text">100% Remoto</span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 mt-3 max-w-2xl leading-relaxed">
+              Atendimento de alta velocidade para empresas, escritórios de advocacia, sistemas judiciais (PJe, ESAJ), portais governamentais (.gov, e-CAC), servidores, redes e produtividade sem espera por deslocamento.
+            </p>
+
+            <!-- DESTAQUES RÁPIDOS DE VELOCIDADE OPERACIONAL -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mt-5">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-emerald"></span>
+                DECOLAGEM IMEDIATA DE SUPORTE
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-50 text-sky-700 border border-sky-200">
+                <span class="w-2 h-2 rounded-full bg-sky-600"></span>
+                RESOLUÇÃO EM VELOCIDADE MÁXIMA
+              </span>
+            </div>
+
+            <!-- FILTROS POR CATEGORIA -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mt-7">
+              <button type="button" id="filter-btn-all" onclick="ANECTTA_APP.filterServices('all')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-sky-600 text-white transition shadow-sm">
+                Todos os Serviços
+              </button>
+              <button type="button" id="filter-btn-juridico" onclick="ANECTTA_APP.filterServices('jurídico')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                ⚖️ Jurídico & Advogados
+              </button>
+              <button type="button" id="filter-btn-governo" onclick="ANECTTA_APP.filterServices('governo')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                🏛️ Portais .gov & Fiscal
+              </button>
+              <button type="button" id="filter-btn-suporte" onclick="ANECTTA_APP.filterServices('suporte')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                Suporte & Lentidão
+              </button>
+              <button type="button" id="filter-btn-seguranca" onclick="ANECTTA_APP.filterServices('segurança')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                Segurança & Backup
+              </button>
+              <button type="button" id="filter-btn-produtividade" onclick="ANECTTA_APP.filterServices('produtividade')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                Produtividade & Office
+              </button>
+              <button type="button" id="filter-btn-infraestrutura" onclick="ANECTTA_APP.filterServices('infraestrutura')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                Redes, Servidores & CFTV
+              </button>
+              <button type="button" id="filter-btn-desenvolvimento" onclick="ANECTTA_APP.filterServices('desenvolvimento')" class="service-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+                Sites & Sistemas
+              </button>
+            </div>
+          </div>
+
+          <!-- COLUNA DIREITA: FOGUETES EM FORMAÇÃO DE VOO (TRANSFERIDO PARA SERVIÇOS) -->
+          <div class="lg:col-span-5 flex justify-center items-center reveal-on-scroll">
+            <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-lg flex items-center justify-center pointer-events-none select-none">
+              
+              <!-- Halo de Luz Radiante de Fundo (Cyan & Sky Glow) -->
+              <div class="absolute -inset-10 bg-gradient-to-tr from-sky-400/25 via-cyan-400/20 to-blue-600/15 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
+              
+              <!-- Anel Orbital de Luz Tecnológica -->
+              <div class="absolute -inset-4 border border-sky-400/20 rounded-full rocket-halo-orbital pointer-events-none">
+                <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-sky-400 shadow-[0_0_12px_#38bdf8]"></div>
+              </div>
+
+              <!-- Foguete Vetorial Tecnológico ANECTTA (Animação Vetorial Suave em Loop) -->
+              <div class="relative z-10 w-full flex items-center justify-center rocket-flying-anim">
+                <!-- Ilustração Vetorial SVG de Alta Fidelidade -->
+              </div>
+
+              <!-- Foguete 2 (-5% Tamanho, Deslocado à Esquerda em Direção aos Textos de Serviços) -->
+              <div class="absolute right-4 sm:right-10 md:right-16 -bottom-12 sm:-bottom-14 w-44 sm:w-56 md:w-64 h-auto z-20 rocket-companion-anim filter drop-shadow-[0_16px_32px_rgba(2,132,199,0.35)] -translate-x-4 sm:-translate-x-8">
+                <svg viewBox="0 0 280 420" class="w-full h-auto overflow-visible select-none">
+                  <defs>
+                    <!-- Gradientes do Corpo do Foguete -->
+                    <linearGradient id="rocketBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"/>
+                      <stop offset="45%" stop-color="#e0f2fe"/>
+                      <stop offset="80%" stop-color="#bae6fd"/>
+                      <stop offset="100%" stop-color="#7dd3fc"/>
+                    </linearGradient>
+
+                    <linearGradient id="rocketBlueStripe" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#0284c7"/>
+                      <stop offset="50%" stop-color="#0ea5e9"/>
+                      <stop offset="100%" stop-color="#38bdf8"/>
+                    </linearGradient>
+
+                    <linearGradient id="rocketCockpitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#0284c7"/>
+                      <stop offset="60%" stop-color="#00f0ff"/>
+                      <stop offset="100%" stop-color="#38bdf8"/>
+                    </linearGradient>
+
+                    <linearGradient id="rocketWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#0369a1"/>
+                      <stop offset="50%" stop-color="#0284c7"/>
+                      <stop offset="100%" stop-color="#0ea5e9"/>
+                    </linearGradient>
+
+                    <!-- Gradiente da Chama do Propulsor -->
+                    <linearGradient id="flameGlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9"/>
+                      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                      <stop offset="80%" stop-color="#f59e0b" stop-opacity="0.7"/>
+                      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+                    </linearGradient>
+
+                    <linearGradient id="flameCoreGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"/>
+                      <stop offset="35%" stop-color="#a5f3fc"/>
+                      <stop offset="70%" stop-color="#00f0ff"/>
+                      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Asas Laterais (Fins) -->
+                  <!-- Asa Esquerda -->
+                  <path d="M85,220 C60,250 35,285 25,305 C55,305 85,295 95,275 Z" fill="url(#rocketWingGrad)" stroke="#0284c7" stroke-width="1.5"/>
+                  <!-- Asa Direita -->
+                  <path d="M195,220 C220,250 245,285 255,305 C225,305 195,295 185,275 Z" fill="url(#rocketWingGrad)" stroke="#0284c7" stroke-width="1.5"/>
+
+                  <!-- Bocal do Motor / Propulsor (Nozzle & Ponto Preto) -->
+                  <path d="M115,300 L165,300 L156,318 L124,318 Z" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+                  <!-- Abertura do Ponto Preto do Propulsor -->
+                  <ellipse cx="140" cy="318" rx="16" ry="4" fill="#050811" stroke="#0284c7" stroke-width="1"/>
+                  <ellipse cx="140" cy="318" rx="10" ry="2.5" fill="#000000"/>
+
+                  <!-- Chamas Propulsoras Levemente Desencostadas do Ponto Preto (Gap de 8px a partir de Y=326) -->
+                  <g transform="translate(140, 326)">
+                    <!-- Chama Externa Expandida (Gradiente Ciano -> Âmbar) -->
+                    <path d="M-20,0 C-32,45 -16,105 0,130 C16,105 32,45 20,0 C12,4 -12,4 -20,0 Z" fill="url(#flameGlowGrad)" class="rocket-flame-glow filter blur-[1px]"/>
+                    <!-- Chama Interna Núcleo (Branco / Ciano Puro) -->
+                    <path d="M-11,0 C-18,35 -8,80 0,100 C8,80 18,35 11,0 C6,3 -6,3 -11,0 Z" fill="url(#flameCoreGrad)" class="rocket-flame-core"/>
+                    <!-- Diamante de Plasma no Ponto de Ignição Desencostado -->
+                    <polygon points="0,0 5,7 0,14 -5,7" fill="#ffffff" opacity="0.95" class="rocket-flame-core"/>
+                  </g>
+
+                  <!-- Partículas de Exaustão Centralizadas Saindo do Ponto de Ignição -->
+                  <circle cx="140" cy="342" r="2.5" fill="#ffffff" class="rocket-trail-particle" style="animation-delay: 0s;"/>
+                  <circle cx="140" cy="360" r="3" fill="#38bdf8" class="rocket-trail-particle" style="animation-delay: 0.3s;"/>
+                  <circle cx="140" cy="380" r="2.5" fill="#00f0ff" class="rocket-trail-particle" style="animation-delay: 0.6s;"/>
+                  <circle cx="140" cy="402" r="2" fill="#f59e0b" class="rocket-trail-particle" style="animation-delay: 0.9s;"/>
+                  <circle cx="140" cy="424" r="1.5" fill="#ef4444" class="rocket-trail-particle" style="animation-delay: 1.2s;"/>
+
+                  <!-- Corpo Principal Aerodinâmico do Foguete (Fuselagem) -->
+                  <path d="M140,25 C175,90 195,190 190,300 L90,300 C85,190 105,90 140,25 Z" fill="url(#rocketBodyGrad)" stroke="#0284c7" stroke-width="2"/>
+
+                  <!-- Faixa Decorativa Azul Tecnológica ANECTTA -->
+                  <path d="M92,230 C120,240 160,240 188,230 L189,255 C160,265 120,265 91,255 Z" fill="url(#rocketBlueStripe)"/>
+                  <path d="M95,160 C120,168 160,168 185,160 L187,175 C160,183 120,183 93,175 Z" fill="url(#rocketBlueStripe)" opacity="0.85"/>
+
+                  <!-- Asa Central / Dorsal Fin -->
+                  <path d="M136,190 L144,190 L144,295 L136,295 Z" fill="#0284c7"/>
+
+                  <!-- Janela / Cockpit de Telemetria -->
+                  <circle cx="140" cy="115" r="24" fill="#0f172a" stroke="#0284c7" stroke-width="3"/>
+                  <circle cx="140" cy="115" r="19" fill="url(#rocketCockpitGrad)"/>
+                  <!-- Reflexo do Vidro do Cockpit -->
+                  <ellipse cx="134" cy="108" rx="8" ry="4" transform="rotate(-30 134 108)" fill="#ffffff" opacity="0.65"/>
+
+                  <!-- Nariz de Alta Velocidade (Nosecone Tip) -->
+                  <path d="M140,25 C146,45 152,65 155,80 L125,80 C128,65 134,45 140,25 Z" fill="#0284c7"/>
+
+                  <!-- Badge / Indicador de Conexão Ativa no Foguete -->
+                  <g transform="translate(140, 275)">
+                    <circle cx="0" cy="0" r="4" fill="#10b981" class="animate-pulse"/>
+                  </g>
+                </svg>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GRID DE SERVIÇOS -->
+        <div id="services-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Renderizado via JavaScript (data.js) -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         8. "O QUE PODEMOS RESOLVER REMOTAMENTE?"
+         ==================================================== -->
+    <section class="py-20 border-t border-slate-200 bg-slate-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            ESCOPO DE ATENDIMENTO
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            O que nossa Central de Operações resolve à distância?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Mapeamos o escopo de atuação remota para que você tenha clareza do poder de resposta da ANECTTA:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card Computadores -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+              <span class="text-sky-600 font-mono font-bold">01.</span> Computadores & Notebooks
+            </h3>
+            <ul class="space-y-1.5 text-xs text-slate-600">
+              <li>• Lentidão e travamentos</li>
+              <li>• Erros de tela azul do Windows</li>
+              <li>• Atualizações de SO e drivers</li>
+              <li>• Remoção de vírus e malwares</li>
+              <li>• Otimização de inicialização</li>
+              <li>• Configuração de novos colaboradores</li>
+            </ul>
+          </div>
+
+          <!-- Card Redes -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+              <span class="text-sky-600 font-mono font-bold">02.</span> Redes Corporativas
+            </h3>
+            <ul class="space-y-1.5 text-xs text-slate-600">
+              <li>• Diagnóstico de internet e DNS</li>
+              <li>• Conflitos de IP e DHCP</li>
+              <li>• Estabilidade de Wi-Fi corporativo</li>
+              <li>• Compartilhamentos de pastas em rede</li>
+              <li>• Túneis de VPN para home office</li>
+              <li>• Regras de acesso e segurança</li>
+            </ul>
+          </div>
+
+          <!-- Card Servidores -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+              <span class="text-sky-600 font-mono font-bold">03.</span> Servidores (Windows / Linux)
+            </h3>
+            <ul class="space-y-1.5 text-xs text-slate-600">
+              <li>• Gestão de Active Directory</li>
+              <li>• Permissões de pastas e grupos</li>
+              <li>• Monitoramento de disco e memória</li>
+              <li>• Serviços de banco de dados</li>
+              <li>• Virtualização (Hyper-V / VMware)</li>
+              <li>• Rotinas de manutenção lógica</li>
+            </ul>
+          </div>
+
+          <!-- Card E-mail e Produtividade -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
+              <span class="text-sky-600 font-mono font-bold">04.</span> E-mail & Nuvem
+            </h3>
+            <ul class="space-y-1.5 text-xs text-slate-600">
+              <li>• Falhas no Microsoft Outlook</li>
+              <li>• Gestão de Microsoft 365 e Google</li>
+              <li>• Correção de SPF, DKIM e DMARC</li>
+              <li>• Migração de caixas postais</li>
+              <li>• Sincronização de OneDrive e Drive</li>
+              <li>• Restauração de e-mails excluídos</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         9. SUPORTE CORRETIVO + PREVENTIVO + PROATIVO
+         ==================================================== -->
+    <section class="py-20 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            EVOLUÇÃO OPERACIONAL
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Corretivo, Preventivo ou Proativo: onde sua TI está?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Nossa missão é tirar sua empresa do modo "apagar incêndios" e levar sua infraestrutura para a previsibilidade total:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          
+          <!-- Corretivo -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-rose-600 font-bold">NÍVEL 01</span>
+                <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">CORRETIVO</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">"Você chama quando para."</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                O problema acontece, o colaborador fica paralisado, a empresa abre um chamado e nós acessamos remotamente para corrigir.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-slate-500 font-medium">
+              Foco: Reativação emergencial
+            </div>
+          </div>
+
+          <!-- Preventivo -->
+          <div class="glass-panel p-6 border border-slate-200 bg-white flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-amber-600 font-bold">NÍVEL 02</span>
+                <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">PREVENTIVO</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">"Reduzimos a chance de falhar."</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Rotinas periódicas programadas: limpeza de arquivos temporários, atualização de segurança de softwares, validação de backups e antivírus.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-amber-700 font-medium">
+              Foco: Estabilidade e rotinas
+            </div>
+          </div>
+
+          <!-- Proativo -->
+          <div class="glass-panel-glow p-6 rounded-2xl bg-white border-2 border-sky-500 shadow-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-mono text-emerald-600 font-bold">NÍVEL 03</span>
+                <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">PROATIVO (PREMIUM)</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">"Detectamos antes de parar."</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Monitoramento contínuo de telemetria (consumo de CPU, temperatura, setores de disco, quedas de serviço). O chamado é aberto antes do colaborador perceber a parada.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 text-[11px] font-mono text-emerald-700 font-semibold">
+              Foco: Continuidade absoluta de negócio
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         10 & 11. PLANOS E PREÇOS PROFISSIONAIS
+         ==================================================== -->
+    <section id="planos" class="py-20 border-t border-slate-200 bg-slate-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            INVESTIMENTO TRANSPARENTE
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Planos de Suporte Remoto sob Medida para sua Empresa
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Flexibilidade de contratação: por empresa, por dispositivo, por usuário ou por atendimento avulso. Sem surpresas no orçamento.
+          </p>
+        </div>
+
+        <!-- GRID DOS 4 PLANOS -->
+        <div id="plans-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+          <!-- Renderizado via JavaScript (app.js / storage.js) -->
+        </div>
+
+        <div class="mt-12 text-center text-xs text-slate-500">
+          * Valores de referência transparentes e facilmente configuráveis. Para cotações sob medida para frotas maiores ou múltiplos servidores, fale com nosso time técnico.
+        </div>
+
+        <!-- CALCULADORA INTERATIVA DE TI INTEGRADA -->
+        <div id="calculadora" class="pt-16 mt-16 border-t border-slate-200 max-w-5xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 font-semibold">
+              SIMULADOR INSTANTÂNEO
+            </span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+              Quanto custaria ter sua TI sob controle?
+            </h3>
+            <p class="text-sm text-slate-600 mt-2">
+              Ajuste os parâmetros abaixo para receber uma recomendação imediata de plano e estimativa de investimento:
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 sm:p-10 border border-slate-200 bg-white grid grid-cols-1 lg:grid-cols-12 gap-8 items-start shadow-md">
+            
+            <!-- PARÂMETROS DA CALCULADORA -->
+            <div class="lg:col-span-7 space-y-5">
+              
+              <!-- Sliders de Usuários e Computadores -->
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1.5 font-semibold">
+                  <span class="text-slate-700">Quantos colaboradores usam computadores?</span>
+                  <span id="calc-users-val" class="text-sky-600 font-bold">8</span>
+                </div>
+                <input type="range" id="calc-users" min="1" max="60" value="8" class="w-full accent-sky-600">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1.5 font-semibold">
+                  <span class="text-slate-700">Quantos computadores/notebooks na empresa?</span>
+                  <span id="calc-computers-val" class="text-sky-600 font-bold">8</span>
+                </div>
+                <input type="range" id="calc-computers" min="1" max="60" value="8" class="w-full accent-sky-600">
+              </div>
+
+              <!-- Seletores de Servidor e Filiais -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div>
+                  <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Possui servidor local?</label>
+                  <select id="calc-server" class="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg text-slate-900 focus:border-sky-500 focus:outline-none">
+                    <option value="single">Sim, 1 Servidor</option>
+                    <option value="multiple">Sim, 2 ou mais Servidores</option>
+                    <option value="none">Não possuo servidor</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Quantas filiais/unidades?</label>
+                  <select id="calc-sites" class="w-full px-3 py-2 text-xs bg-white border border-slate-300 rounded-lg text-slate-900 focus:border-sky-500 focus:outline-none">
+                    <option value="1">1 Sede única</option>
+                    <option value="2">2 a 4 Unidades</option>
+                    <option value="5">Mais de 5 Unidades</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Checkboxes de Recursos -->
+              <div class="pt-2">
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-2">Recursos adicionais desejados:</label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-m365" checked class="rounded text-sky-600 border-slate-300">
+                    <span>Usa Microsoft 365</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-gws" class="rounded text-sky-600 border-slate-300">
+                    <span>Usa Google Workspace</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-backup" checked class="rounded text-sky-600 border-slate-300">
+                    <span>Precisa de Backup em Nuvem</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-monitor" checked class="rounded text-sky-600 border-slate-300">
+                    <span>Monitoramento Proativo 24h</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-security" checked class="rounded text-sky-600 border-slate-300">
+                    <span>Antivírus Gerenciado</span>
+                  </label>
+                  <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" id="calc-priority" class="rounded text-sky-600 border-slate-300">
+                    <span>SLA Crítico Prioritário</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- RESULTADO DA RECOMENDAÇÃO -->
+            <div class="lg:col-span-5 p-6 rounded-2xl bg-slate-50 border border-sky-300 flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs font-mono text-slate-500 font-semibold">PLANO RECOMENDADO:</span>
+                  <span id="calc-result-badge" class="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-100 text-sky-700 border border-sky-200">RECOMENDADO</span>
+                </div>
+                <h3 id="calc-result-plan" class="text-2xl font-black text-slate-900 tracking-wide">PROFISSIONAL</h3>
+                <p id="calc-result-price" class="text-xl font-bold text-sky-600 font-mono mt-1">A partir de R$ 890/mês</p>
+                <p id="calc-result-desc" class="text-xs text-slate-600 mt-3 leading-relaxed">
+                  Ideal para empresas que dependem diariamente da infraestrutura e precisam de suporte ágil, prevenção e monitoramento de ativos.
+                </p>
+                
+                <div id="calc-result-summary"></div>
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-slate-200">
+                <a id="calc-cta-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl btn-emergency text-white font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 shadow-md">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.966.582 1.896.887 2.802.887 3.178 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.774-5.773-5.774zm3.432 8.169c-.144.406-.838.749-1.161.797-.323.048-.718.064-2.115-.494-1.696-.677-2.784-2.404-2.868-2.518-.084-.113-.687-.914-.687-1.743 0-.829.434-1.238.588-1.408.154-.17.336-.214.448-.214.112 0 .224.001.322.006.103.006.241-.039.377.29.144.346.49 1.196.533 1.282.043.086.072.186.014.3-.058.114-.087.186-.173.286-.086.101-.182.226-.26.303-.09.088-.184.184-.079.364.105.18.468.772 1.004 1.25.688.613 1.269.803 1.449.893.18.09.286.076.393-.048.106-.124.457-.533.58-.715.123-.182.247-.152.414-.09.168.062 1.066.503 1.25.594.184.092.308.138.353.215.045.077.045.449-.099.855z"/></svg>
+                  FALAR COM ESPECIALISTA SOBRE ESTA ESTIMATIVA
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         14. COBERTURA BRASIL & INTERNACIONAL
+         ==================================================== -->
+    <section class="py-20 border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            ALCANCE SEM FRONTEIRAS
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 leading-tight">
+            Atendimento onde sua empresa estiver.
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-4 leading-relaxed max-w-3xl mx-auto">
+            Como nossa Central de Operações é 100% digital, eliminamos as barreiras geográficas. Prestamos atendimento técnico simultâneo para sua sede, filiais distribuídas em diferentes estados brasileiros e colaboradores em regime de trabalho remoto ou viagem ao exterior.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 my-8 text-xs font-mono text-slate-700 font-medium">
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              São Paulo & Sudeste
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Sul & Paraná
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Centro-Oeste
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Nordeste & Norte
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Home Office
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center gap-2 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+              Internacional*
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-500">
+            * Atendimento internacional sujeito a viabilidade técnica de conectividade com a internet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         15. SLA: VOCÊ SABE QUANDO SERÁ ATENDIDO
+         ==================================================== -->
+    <section class="py-20 bg-slate-50/70 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            COMPROMISSO DE TEMPO
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Você sabe exatamente quando será atendido.
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Chega de respostas vagas. Trabalhamos com Acordo de Nível de Serviço (SLA) claro e configurável contratualmente:
+          </p>
+        </div>
+
+        <div class="glass-panel max-w-4xl mx-auto overflow-x-auto border border-slate-200 bg-white shadow-md">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-200 text-xs font-mono text-slate-600 bg-slate-50">
+                <th class="py-3 px-4 font-bold">PRIORIDADE</th>
+                <th class="py-3 px-4 font-bold">EXEMPLOS DE CENÁRIO</th>
+                <th class="py-3 px-4 font-bold">RESPOSTA INICIAL</th>
+                <th class="py-3 px-4 font-bold">DIAGNÓSTICO & ATENDIMENTO</th>
+              </tr>
+            </thead>
+            <tbody id="sla-table-body">
+              <!-- Renderizado dinamicamente via app.js / data.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         25. DIFERENCIAIS: POR QUE EMPRESAS ESCOLHEM SUPORTE REMOTO?
+         ==================================================== -->
+    <section class="py-20 border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            VANTAGENS COMPETITIVAS
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Por que empresas modernas escolhem o Suporte Remoto?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Os principais motivos pelos quais negócios eficientes abandonaram as visitas de técnicos de informática:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">⚡</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Agilidade Imediata</h3>
+            <p class="text-xs text-slate-500">Resolva problemas urgentes sem esperar o técnico enfrentar o trânsito da cidade.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">💰</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Economia Real</h3>
+            <p class="text-xs text-slate-500">Elimine despesas de deslocamento, visitas improdutivas e custos de deslocamento.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">🌎</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Cobertura Ampla</h3>
+            <p class="text-xs text-slate-500">Atenda colaboradores na matriz, filiais ou trabalhando em casa com a mesma velocidade.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">🔐</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Segurança e Controle</h3>
+            <p class="text-xs text-slate-500">Acesso estritamente autorizado pelo usuário e finalizável com um clique.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">📊</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Visibilidade Total</h3>
+            <p class="text-xs text-slate-500">Histórico de chamados, inventário de ativos e relatórios técnicos consolidados.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">🛡️</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Prevenção Constante</h3>
+            <p class="text-xs text-slate-500">Não espere a parada acontecer: aplicamos correções e monitoramos telemetria.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">🚀</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Máxima Produtividade</h3>
+            <p class="text-xs text-slate-500">Menos tempo ocioso para a equipe de vendas, financeiro e operações.</p>
+          </div>
+
+          <div class="glass-panel p-6 border border-slate-200 bg-white shadow-sm">
+            <div class="text-2xl mb-2">📋</div>
+            <h3 class="text-base font-bold text-slate-900 mb-1">Organização de TI</h3>
+            <p class="text-xs text-slate-500">Documentação técnica, senhas administrativas e licenças sob controle profissional.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         23. DIAGNÓSTICO GRATUITO DE TI
+         ==================================================== -->
+    <section id="diagnostico" class="py-20 bg-slate-50/70 border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-panel p-8 sm:p-12 border border-slate-200 bg-white shadow-lg relative">
+          
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <span class="text-xs font-mono uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 font-semibold">
+              AVALIAÇÃO ESTRATÉGICA SEM CUSTO
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+              Descubra onde sua TI está perdendo tempo e dinheiro.
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2">
+              Preencha o formulário abaixo para que nossos especialistas em infraestrutura façam uma análise remota preliminar do cenário da sua empresa:
+            </p>
+          </div>
+
+          <form id="form-diagnostico-ti" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Seu Nome *</label>
+                <input type="text" id="diag-name" required placeholder="Ex: Lucas Ferreira" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Nome da Empresa *</label>
+                <input type="text" id="diag-company" required placeholder="Ex: Distribuidora Silva Ltda" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">WhatsApp de Contato *</label>
+                <input type="text" id="diag-whatsapp" required placeholder="(11) 99999-9999" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">E-mail Corporativo *</label>
+                <input type="email" id="diag-email" required placeholder="seuemail@suaempresa.com.br" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Nº de Usuários</label>
+                <input type="number" id="diag-users" min="1" placeholder="Ex: 10" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Nº de Computadores</label>
+                <input type="number" id="diag-computers" min="1" placeholder="Ex: 10" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Possui Servidor?</label>
+                <select id="diag-server" class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none">
+                  <option value="Não">Não</option>
+                  <option value="1 Servidor Windows">1 Servidor Windows</option>
+                  <option value="1 Servidor Linux">1 Servidor Linux</option>
+                  <option value="Múltiplos Servidores">Múltiplos Servidores</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-600 font-semibold mb-2">Ambiente Atual (Marque o que sua empresa utiliza):</label>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-m365" class="rounded text-sky-600 border-slate-300"> <span>Microsoft 365</span></label>
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-gws" class="rounded text-sky-600 border-slate-300"> <span>Google Workspace</span></label>
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-backup" class="rounded text-sky-600 border-slate-300"> <span>Backup Automatizado</span></label>
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-antivirus" class="rounded text-sky-600 border-slate-300"> <span>Antivírus Corporativo</span></label>
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-firewall" class="rounded text-sky-600 border-slate-300"> <span>Firewall Dedicado</span></label>
+                <label class="flex items-center gap-2"><input type="checkbox" id="diag-vpn" class="rounded text-sky-600 border-slate-300"> <span>VPN para Home Office</span></label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-600 font-semibold mb-1">Qual o principal problema ou necessidade hoje?</label>
+              <textarea id="diag-problem" rows="3" placeholder="Ex: Nossos computadores estão lentos, temos medo de perder dados de backup e nosso suporte atual demora dias para responder..." class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-xl text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"></textarea>
+            </div>
+
+            <div class="pt-3">
+              <button type="submit" class="w-full py-4 rounded-xl btn-emergency text-sm font-bold text-white shadow-md flex items-center justify-center gap-2">
+                SOLICITAR DIAGNÓSTICO GRATUITO
+              </button>
+            </div>
+          </form>
+
+          <!-- Feedback de Sucesso do Diagnóstico -->
+          <div id="diag-success-container" class="hidden mt-6 p-6 rounded-xl bg-emerald-50 border border-emerald-300 text-center shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Recebemos suas informações!</h3>
+            <p class="text-sm text-slate-600 mt-1">
+              Um especialista da Central de Operações ANECTTA analisará seu cenário e entrará em contato via WhatsApp/e-mail com o parecer preliminar.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         19. FAQ COM 20+ PERGUNTAS E RESPOSTAS
+         ==================================================== -->
+    <section id="faq" class="py-20 border-t border-slate-200 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 font-semibold">
+            TIRA-DÚVIDAS COMPLETO
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Esclareça todas as suas dúvidas sobre o funcionamento, segurança e contratação do suporte remoto:
+          </p>
+        </div>
+
+        <div id="faq-accordion-container">
+          <!-- Renderizado via JavaScript (data.js) com 20 perguntas reais -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ====================================================
+         INSTITUCIONAL: A ANECTTA (MAIS DE 10 ANOS EM TIC)
+         ==================================================== -->
+    <section id="sobre-nos" class="py-16 bg-white border-t border-slate-200 scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <span class="text-xs font-mono uppercase tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 font-semibold">
+              TRADIÇÃO & INOVAÇÃO EM TIC
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-3">
+              Estamos há mais de 10 anos crescendo no segmento de TIC
+            </h2>
+            <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+              A ANECTTA é uma empresa de gestão de infraestrutura de TIC especializada em soluções remotas de alto nível, consultoria e projetos de tecnologia da informação, redes de alta disponibilidade, segurança cibernética e desenvolvimento sob medida.
+            </p>
+            <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+              Com objetivos focados no cliente e atuação 100% remota em todo o Brasil, combinamos atendimento humanizado com ferramentas de telemetria avançada, transformando suporte técnico reativo em parceria estratégica de longo prazo para o seu negócio.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 pt-6 border-t border-slate-200 text-center">
+              <div>
+                <div class="text-2xl font-bold text-sky-600 font-mono-tech">+10</div>
+                <div class="text-[11px] text-slate-500 mt-0.5 font-medium">Anos no Mercado</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-emerald-600 font-mono-tech">100%</div>
+                <div class="text-[11px] text-slate-500 mt-0.5 font-medium">Remoto e Seguro</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-sky-600 font-mono-tech">Brasil</div>
+                <div class="text-[11px] text-slate-500 mt-0.5 font-medium">Cobertura Nacional</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-emerald-600 font-mono-tech">Zero</div>
+                <div class="text-[11px] text-slate-500 mt-0.5 font-medium">Custo Deslocamento</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-4">
+            <div class="glass-panel spotlight-card p-6 border border-slate-200 bg-white shadow-md reveal-on-scroll">
+              <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rounded-full bg-sky-600"></span>
+                Nossos Diferenciais Estratégicos
+              </h3>
+              <ul class="space-y-3 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-sky-600 font-bold">✓</span>
+                  <span><strong>Desenvolvimento & Integração:</strong> Soluções web, sistemas customizados e fluxos automatizados.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Suporte Especializado:</strong> Resolução rápida de falhas em estações, servidores e sistemas judiciais/fiscais.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-sky-600 font-bold">✓</span>
+                  <span><strong>Design & Experiência:</strong> TI intuitiva e aprimoramento visual de todas as nossas implantações.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Base Operacional:</strong> Barra da Tijuca, Rio de Janeiro - atendendo todo o Brasil e exterior.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         BANNER FINAL DE CONVERSÃO
+         ==================================================== -->
+    <section class="py-24 relative overflow-hidden bg-gradient-to-b from-slate-50 via-sky-50/50 to-white border-t border-slate-200">
+      <div class="hero-glow-orb top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-sky-500/10"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-on-scroll">
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-6">
+          Pronto para ter sua TI resolvida em minutos?
+        </h2>
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Sem deslocamento. Sem perder horas com colaboradores paralisados. Atendimento autorizado, seguro e em tempo real.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button type="button" class="btn-open-support w-full sm:w-auto px-8 py-4 rounded-xl btn-emergency text-sm font-bold text-white flex items-center justify-center gap-2 shadow-lg">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-emerald"></span>
+            PRECISO DE SUPORTE AGORA
+          </button>
+          <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-xl btn-secondary-tech text-sm font-bold text-slate-700 text-center shadow-sm">
+            FALAR COM UM CONSULTOR
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================
+       30. RODAPÉ COMPLETO
+       ==================================================== -->
+  <footer id="contato" class="bg-white border-t border-slate-200 text-slate-600 text-xs py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Coluna 1: Marca & Conceito -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="inline-block mb-3 group" title="ANECTTA - Soluções em Tecnologia">
+            <img src="assets/images/anectta-logo-transparent.png" alt="ANECTTA - Soluções em Tecnologia" class="h-12 sm:h-14 w-auto object-contain drop-shadow-sm group-hover:opacity-95 transition">
+          </a>
+          <p class="text-xs text-sky-600 font-mono mb-4 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+            CENTRAL DE OPERAÇÕES DE TI REMOTA
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed max-w-sm mb-6">
+            "Seu TI resolvido à distância." Atendimento técnico especializado 100% remoto para empresas de todo o Brasil. Sem taxa de deslocamento, sem espera física, com acompanhamento em tempo real.
+          </p>
+          <div class="space-y-2 text-xs text-slate-700">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-200/60">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+              </span>
+              <span>Telefone / WhatsApp: <strong class="text-slate-900 dynamic-whatsapp-text font-bold">(21) 99705-8709</strong></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 border border-sky-200/60">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </span>
+              <span>E-mail Geral: <strong class="text-slate-900 font-semibold">anectta@anectta.com.br</strong></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 border border-sky-200/60">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+              </span>
+              <span>E-mail de Suporte: <strong class="text-slate-900 font-semibold">suporte@anectta.com.br</strong></span>
+            </div>
+            <div class="flex items-start gap-2 text-slate-500 text-[11px] pt-1">
+              <span class="w-5 h-5 rounded-md bg-slate-100 text-slate-500 flex items-center justify-center shrink-0 mt-0.5 border border-slate-200">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              </span>
+              <span>Av. Evandro Lins e Silva, 840 Sala 411P | Office Tower, Barra da Tijuca - RJ</span>
+            </div>
+            <div class="flex items-center gap-2 text-emerald-700 font-mono text-[11px] pt-1">
+              <span class="w-5 h-5 rounded-md bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </span>
+              <span class="font-semibold">Mais de 10 anos de atuação no mercado de TIC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Serviços Remotos -->
+        <div>
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-mono mb-4 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-sky-600" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            Serviços Remotos
+          </h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="suporte-ti.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                <span>Suporte de TI Remoto</span>
+              </a>
+            </li>
+            <li>
+              <a href="suporte-remoto.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                <span>Atendimento Técnico</span>
+              </a>
+            </li>
+            <li>
+              <a href="manutencao-computadores.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                <span>Assistência Computadores</span>
+              </a>
+            </li>
+            <li>
+              <a href="suporte-servidores.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm0 7h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm0 7h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm2-12v2h2V5H6zm0 7v2h2v-2H6zm0 7v2h2v-2H6z"/></svg>
+                <span>Redes & Servidores</span>
+              </a>
+            </li>
+            <li>
+              <a href="suporte-microsoft-365.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+                <span>Microsoft 365</span>
+              </a>
+            </li>
+            <li>
+              <a href="suporte-google-workspace.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+                <span>Google Workspace</span>
+              </a>
+            </li>
+            <li>
+              <a href="backup-nuvem.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                <span>Backup em Nuvem</span>
+              </a>
+            </li>
+            <li>
+              <a href="seguranca-da-informacao.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>Segurança & Antivírus</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Infra & Especialidades -->
+        <div>
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-mono mb-4 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-sky-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            Infra & Soluções
+          </h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="firewall-vpn.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                <span>Firewall & VPN</span>
+              </a>
+            </li>
+            <li>
+              <a href="migracao-email.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 6v12l10 4 10-4V6l-10-4zm0 2.24L18.76 7 12 9.76 5.24 7 12 4.24zM4 8.25l7 3.11v8.39l-7-2.8V8.25zm9 11.5v-8.39l7-3.11v8.7l-7 2.8z"/></svg>
+                <span>Migração de E-mail</span>
+              </a>
+            </li>
+            <li>
+              <a href="gestao-licencas.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                <span>Gestão de Licenças</span>
+              </a>
+            </li>
+            <li>
+              <a href="cftv-remoto.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                <span>CFTV Remoto (Lógico)</span>
+              </a>
+            </li>
+            <li>
+              <a href="projeto-cabeamento.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4h-2V2h-2v2H9V2H7zm8 4h2v12H7V6h2v2h6V6z"/></svg>
+                <span>Consultoria Cabeamento</span>
+              </a>
+            </li>
+            <li>
+              <a href="criacao-sites.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                <span>Criação de Sites</span>
+              </a>
+            </li>
+            <li>
+              <a href="criacao-sistemas.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                <span>Criação de Sistemas</span>
+              </a>
+            </li>
+            <li>
+              <a href="planos.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>Contratos Mensais</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Institucional & Portais -->
+        <div>
+          <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-mono mb-4 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-sky-600" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/></svg>
+            Acesso & Legal
+          </h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="iniciar-suporte.html" class="flex items-center gap-2 text-sky-600 hover:text-sky-700 font-bold group transition">
+                <svg class="w-3.5 h-3.5 text-sky-600 shrink-0 group-hover:scale-110 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.01-4.09l-2.49-1.47C16.14 17.91 14.21 19 12 19z"/></svg>
+                <span class="underline underline-offset-2">Iniciar Suporte Remoto</span>
+              </a>
+            </li>
+            <li>
+              <a href="area-do-cliente.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                <span>Área do Cliente</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin.html" class="flex items-center gap-2 text-slate-500 hover:text-slate-700 group transition">
+                <svg class="w-3.5 h-3.5 text-slate-400 shrink-0 group-hover:scale-110 group-hover:text-slate-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                <span>Painel Administrativo</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="politica-privacidade.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                <span>Política de Privacidade</span>
+              </a>
+            </li>
+            <li>
+              <a href="termos-uso.html" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                <span>Termos de Uso</span>
+              </a>
+            </li>
+            <li>
+              <a href="politica-privacidade.html#lgpd" class="flex items-center gap-2 hover:text-sky-600 group transition">
+                <svg class="w-3.5 h-3.5 text-sky-500 shrink-0 group-hover:scale-110 group-hover:text-sky-600 transition" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Conformidade LGPD</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <div>
+          © 2026 ANECTTA Tecnologia Ltda. Todos os direitos reservados. Operação Estritamente Remota.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-1.5 text-emerald-700 font-mono">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Conexões Homologadas TLS 256-bit
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       SELO FLUTUANTE: GUARDIÕES DO ASYLO (EMPRESA GUARDIÃ)
+       ==================================================== -->
+  <aside id="selo-guardioes-floating" class="selo-guardioes-floating" aria-label="Selo Empresa Guardiã - Guardiões do Asylo">
+    <div class="selo-badge-wrapper group" id="selo-trigger" role="button" tabindex="0">
+      <img src="assets/images/selo-guardioes-card.png" alt="Selo Guardiões do Asylo - AEJE - Nós Apoiamos - Empresa Guardiã" class="selo-badge-img">
+      <div class="selo-badge-tooltip">
+        <div class="flex items-center gap-1.5 text-amber-600 font-bold text-[10px] tracking-wider uppercase mb-1">
+          <svg class="w-3.5 h-3.5 fill-current text-amber-500" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          Responsabilidade Social
+        </div>
+        <div class="text-xs font-bold text-slate-900 leading-tight mb-1">
+          Empresa Guardiã
+        </div>
+        <p class="text-[11px] text-slate-600 leading-snug">
+          A ANECTTA apoia os Guardiões do Asylo. <a href="https://aeje-six.vercel.app" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-semibold underline hover:text-amber-700">Clique aqui, conheça e faça parte!</a>
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a href="#" target="_blank" rel="noopener noreferrer" class="whatsapp-floating dynamic-whatsapp-link" title="Falar com especialista no WhatsApp">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.966.582 1.896.887 2.802.887 3.178 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.774-5.773-5.774zm3.432 8.169c-.144.406-.838.749-1.161.797-.323.048-.718.064-2.115-.494-1.696-.677-2.784-2.404-2.868-2.518-.084-.113-.687-.914-.687-1.743 0-.829.434-1.238.588-1.408.154-.17.336-.214.448-.214.112 0 .224.001.322.006.103.006.241-.039.377.29.144.346.49 1.196.533 1.282.043.086.072.186.014.3-.058.114-.087.186-.173.286-.086.101-.182.226-.26.303-.09.088-.184.184-.079.364.105.18.468.772 1.004 1.25.688.613 1.269.803 1.449.893.18.09.286.076.393-.048.106-.124.457-.533.58-.715.123-.182.247-.152.414-.09.168.062 1.066.503 1.25.594.184.092.308.138.353.215.045.077.045.449-.099.855z"/></svg>
+    <span>Suporte WhatsApp</span>
+  </a>
+
+  <!-- BARRA FIXA MOBILE DE CONVERSÃO -->
+  <div class="mobile-action-bar">
+    <button type="button" class="btn-open-support flex-1 py-3 rounded-xl btn-emergency text-xs font-bold text-white flex items-center justify-center gap-1.5 shadow-md">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-emerald"></span>
+      PRECISO DE SUPORTE AGORA
+    </button>
+    <a href="#" target="_blank" rel="noopener noreferrer" class="dynamic-whatsapp-link p-3 rounded-xl bg-emerald-600 text-white flex items-center justify-center shadow-md" title="WhatsApp">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.966.582 1.896.887 2.802.887 3.178 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.774-5.773-5.774zm3.432 8.169c-.144.406-.838.749-1.161.797-.323.048-.718.064-2.115-.494-1.696-.677-2.784-2.404-2.868-2.518-.084-.113-.687-.914-.687-1.743 0-.829.434-1.238.588-1.408.154-.17.336-.214.448-.214.112 0 .224.001.322.006.103.006.241-.039.377.29.144.346.49 1.196.533 1.282.043.086.072.186.014.3-.058.114-.087.186-.173.286-.086.101-.182.226-.26.303-.09.088-.184.184-.079.364.105.18.468.772 1.004 1.25.688.613 1.269.803 1.449.893.18.09.286.076.393-.048.106-.124.457-.533.58-.715.123-.182.247-.152.414-.09.168.062 1.066.503 1.25.594.184.092.308.138.353.215.045.077.045.449-.099.855z"/></svg>
+    </a>
+  </div>
+
+  <!-- MODAL INTERATIVO: "PRECISO DE SUPORTE AGORA" -->
+  <div id="support-modal-overlay" class="modal-overlay">
+    <div class="modal-container p-6 sm:p-8 relative bg-white border border-slate-200 shadow-2xl">
+      <!-- Botão Fechar -->
+      <button type="button" id="support-modal-close" class="absolute top-4 right-4 p-2 rounded-lg bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Indicador de Passos -->
+      <div id="support-modal-step-indicator"></div>
+
+      <!-- Corpo do Passo -->
+      <div id="support-modal-body">
+        <!-- Renderizado dinamicamente pelo support-flow.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts da Aplicação -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/support-flow.js"></script>
+  <script src="assets/js/portal.js"></script>
+  <script src="assets/js/speedtest.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>

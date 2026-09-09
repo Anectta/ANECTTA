@@ -1,0 +1,19 @@
+{
+  "name": "anectta-remote-it",
+  "version": "1.0.0",
+  "description": "ANECTTA - Central de Operações de TI Remota",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "suporte-ti",
+    "ti-remota",
+    "speedtest",
+    "netpulse",
+    "anectta"
+  ],
+  "author": "ANECTTA Tecnologia",
+  "license": "UNLICENSED"
+}
