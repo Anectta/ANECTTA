@@ -283,7 +283,10 @@ const ANECTTA_APP = {
     container.innerHTML = sla.map((item) => `
       <tr class="border-b border-slate-100 hover:bg-slate-50 transition">
         <td class="py-4 px-4 font-mono font-bold text-xs">
-          <span class="px-2.5 py-1 rounded-full ${item.class}">● ${item.level}</span>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${item.class}">
+            <span class="w-1.5 h-1.5 rounded-full bg-current shrink-0"></span>
+            ${item.level}
+          </span>
         </td>
         <td class="py-4 px-4 text-xs sm:text-sm text-slate-700">${item.description}</td>
         <td class="py-4 px-4 text-xs font-mono text-emerald-600 font-semibold">${item.tempoResposta}</td>
