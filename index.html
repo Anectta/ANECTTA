@@ -374,145 +374,303 @@
 
           </div>
 
-          <!-- COLUNA DIREITA: IMAGEM ILUSTRATIVA DO ECOSSISTEMA DE SUPORTE REMOTO -->
+          <!-- COLUNA DIREITA: VELOCÍMETRO CLONE COM ANIMAÇÃO CONTÍNUA DE CONEXÃO REAL -->
           <div class="lg:col-span-5 flex flex-col items-center justify-center py-2 relative reveal-on-scroll">
-            <div class="relative w-full max-w-[480px] mx-auto select-none">
-              <!-- Glow de fundo decorativo -->
-              <div class="absolute inset-0 bg-gradient-to-br from-sky-400/20 via-cyan-400/10 to-transparent rounded-3xl blur-2xl pointer-events-none"></div>
-              <!-- Imagem principal: ecossistema de TI remoto -->
-              <img
-                src="assets/images/hero-remote-it.jpg"
-                alt="Ecossistema de suporte de TI remoto ANECTTA — servidores, segurança, helpdesk e redes interconectados"
-                class="relative z-10 w-full rounded-3xl shadow-2xl border border-sky-200/50 drop-shadow-xl"
-                loading="eager"
-                width="480"
-                height="480"
-              >
-              <!-- Badge flutuante: 100% Remoto -->
-              <div class="absolute -top-3 -right-3 z-20 flex items-center gap-1.5 bg-white border border-sky-200 shadow-lg rounded-full px-3 py-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
-                <span class="text-[11px] font-black text-sky-700 tracking-wide uppercase">100% Remoto</span>
-              </div>
-              <!-- Badge flutuante inferior: Cobertura Nacional -->
-              <div class="absolute -bottom-3 -left-3 z-20 flex items-center gap-1.5 bg-white border border-slate-200 shadow-lg rounded-full px-3 py-1.5">
-                <svg class="w-3.5 h-3.5 text-sky-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="12" cy="12" r="9.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.5 12h19M12 2.5a15 15 0 0 1 0 19M12 2.5a15 15 0 0 0 0 19"/></svg>
-                <span class="text-[11px] font-black text-slate-700 tracking-wide uppercase">Todo o Brasil</span>
-              </div>
-            </div>
-          </div>
+            
+            <div class="hero-gauge-container w-full flex flex-col items-center justify-center">
+              
+              <div class="hero-gauge-wrapper flex items-center justify-center select-none relative">
+                <!-- CÍRCULOS CONCÊNTRICOS POR FORA DO VELOCÍMETRO -->
+                <div class="nperf-gauge-external-rings pointer-events-none">
+                  <div class="nperf-ext-ring nperf-ext-ring-1"></div>
+                  <div class="nperf-ext-ring nperf-ext-ring-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-1"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-2"></div>
+                  <div class="nperf-radiant-wave nperf-radiant-wave-3"></div>
+                </div>
 
-        </div>
+                <svg viewBox="0 0 400 400" class="w-full h-full overflow-visible cockpit-speedometer-svg" style="overflow: visible;">
+  <defs>
+    <!-- Fundo da Base Externa em Degradê Azul Cibernético -->
+    <radialGradient id="baseBlueRadialBg_hero-gauge-needle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#075985" />
+      <stop offset="35%" stop-color="#034575" />
+      <stop offset="70%" stop-color="#022852" />
+      <stop offset="100%" stop-color="#01142e" />
+    </radialGradient>
 
-      </div>
-    </section>
+    <!-- Gradiente Fundo do Dial Central (Azul Profundo Cockpit com Luminosidade Atenuada) -->
+    <radialGradient id="dialDarkRadialBg_hero-gauge-needle" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.45" />
+      <stop offset="25%" stop-color="#035482" />
+      <stop offset="60%" stop-color="#052c52" />
+      <stop offset="85%" stop-color="#021a36" />
+      <stop offset="100%" stop-color="#010d1c" />
+    </radialGradient>
 
-    <!-- ====================================================
-         BANNER: ANECTTA NETPULSE — VELOCÍMETRO CORPORATIVO
-         Ferramenta exclusiva para medir a qualidade real da
-         sua conexão antes de iniciar um atendimento remoto.
-         O velocímetro mede: Download, Upload, Ping, Jitter,
-         Perda de Pacotes, Estabilidade e ISP.
-         ==================================================== -->
-    <section class="py-14 bg-gradient-to-br from-[#011024] via-[#022852] to-[#010d1c] border-t border-sky-900/40 relative overflow-hidden">
+    <!-- Gradiente do Cubo Central -->
+    <radialGradient id="centerHubRadialBg_hero-gauge-needle" cx="45%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="55%" stop-color="#063868" />
+      <stop offset="100%" stop-color="#021226" />
+    </radialGradient>
 
-      <!-- Ondas decorativas de fundo -->
-      <div class="absolute inset-0 pointer-events-none overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border border-sky-500/10 animate-ping" style="animation-duration:6s;"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border border-cyan-400/10 animate-ping" style="animation-duration:4.5s;animation-delay:1s;"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-sky-500/5 blur-3xl"></div>
-      </div>
+    <!-- Gradiente do Ponteiro Neon Laranja Flamejante -->
+    <linearGradient id="needleOrangeFireGrad_hero-gauge-needle" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff3d00" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#ff6d00" />
+      <stop offset="80%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ffe57f" />
+    </linearGradient>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <!-- Gradiente do Anel Neon Ciano Interno (Mais Escurecido) -->
+    <linearGradient id="haloCyanInnerGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#0369a1" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
 
-          <!-- Coluna Esquerda: Velocímetro preview visual -->
-          <div class="flex justify-center items-center order-2 lg:order-1">
-            <div class="relative w-full max-w-[300px] mx-auto select-none">
-              <!-- Anéis externos decorativos -->
-              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div class="w-[300px] h-[300px] rounded-full border border-cyan-400/20 animate-spin" style="animation-duration:20s;"></div>
-                <div class="absolute w-[260px] h-[260px] rounded-full border border-sky-500/15 animate-spin" style="animation-duration:15s;animation-direction:reverse;"></div>
-              </div>
-              <!-- Preview visual do velocímetro -->
-              <div class="relative z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#022852] to-[#010d1c] rounded-full w-[240px] h-[240px] mx-auto border-2 border-sky-500/30 shadow-[0_0_60px_rgba(0,210,255,0.15)]">
-                <div class="absolute inset-3 rounded-full border border-cyan-400/30"></div>
-                <!-- Indicador LIVE -->
-                <div class="flex flex-col items-center gap-1 mb-10">
-                  <span class="w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.8)] animate-pulse"></span>
+    <!-- Gradiente do Anel Neon Ciano Externo -->
+    <linearGradient id="haloCyanGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Gradiente da Trilha do Arco Ativo -->
+    <linearGradient id="dialArcGrad_hero-gauge-needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. BASE CIRCULAR DE VIDRO ESCURO COM DEGRADÊ AZUL COCKPIT -->
+  <circle cx="200" cy="200" r="194" fill="url(#baseBlueRadialBg_hero-gauge-needle)" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- 2. ANEL DE NEON CIANO EXTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="184" fill="none" stroke="url(#haloCyanGrad_hero-gauge-needle)" stroke-width="4.5" class="cockpit-neon-cyan-ring" />
+  <circle cx="200" cy="200" r="188" fill="none" stroke="#00d2ff" stroke-width="1.2" opacity="0.4" />
+
+  <!-- 3. ANEL DE HALO CIANO NEON INTERNO (PULSANTE) -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#haloCyanInnerGrad_hero-gauge-needle)" stroke-width="3.2" class="cockpit-neon-cyan-inner-ring" />
+
+  <!-- 4. ASAS LATERAIS COM 12 BARRAS DE LED CADA (ILUMINAÇÃO DINÂMICA) -->
+  <!-- Asa Esquerda -->
+  <g class="cockpit-wing-left">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 128 78 L 88 78 L 56 160 L 56 240 L 88 322 L 128 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-left-0" x="96" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-1" x="86" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-2" x="78" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-3" x="72" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-4" x="68" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-5" x="66" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-6" x="66" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-7" x="68" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-8" x="72" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-left-9" x="78" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-left-10" x="86" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-left-11" x="96" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- Asa Direita -->
+  <g class="cockpit-wing-right">
+    <!-- Suporte Geométrico Externo -->
+    <path d="M 272 78 L 312 78 L 344 160 L 344 240 L 312 322 L 272 322" fill="none" stroke="#00d2ff" stroke-width="2.2" opacity="0.6" />
+    <!-- 12 Barras LED -->
+      <rect class="cockpit-led-bar led-right-0" x="278" y="88" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-1" x="286" y="106" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-2" x="292" y="124" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-3" x="297" y="142" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-4" x="300" y="160" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-5" x="301" y="178" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-6" x="301" y="196" width="33" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-7" x="300" y="214" width="32" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-8" x="297" y="232" width="31" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+      <rect class="cockpit-led-bar led-right-9" x="292" y="250" width="30" height="9" rx="2" fill="#00d2ff" opacity="0.45" />
+      <rect class="cockpit-led-bar led-right-10" x="286" y="268" width="28" height="9" rx="2" fill="#00d2ff" opacity="0.70" />
+      <rect class="cockpit-led-bar led-right-11" x="278" y="286" width="26" height="9" rx="2" fill="#00d2ff" opacity="0.95" />
+  </g>
+
+  <!-- 5. MOSTRADOR PRINCIPAL DO DIAL (GRADIENTE RADIAL AZUL EM DEGRADÊ) -->
+  <circle cx="200" cy="200" r="150" fill="url(#dialDarkRadialBg_hero-gauge-needle)" stroke="#00d2ff" stroke-width="2.5" opacity="0.98" />
+  <circle cx="200" cy="200" r="148" fill="none" stroke="rgba(0, 210, 255, 0.4)" stroke-width="1" />
+
+  <!-- 6. ONDAS RADIANTES EXPANSIVAS EMITIDAS DO CENTRO (RADAR HUD PULSE) -->
+  <g class="cockpit-radiant-pulse-waves" pointer-events="none">
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="2" class="cockpit-wave-ring cockpit-wave-1" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#38bdf8" stroke-width="1.8" class="cockpit-wave-ring cockpit-wave-2" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00f0ff" stroke-width="1.5" class="cockpit-wave-ring cockpit-wave-3" />
+    <circle cx="200" cy="200" r="38" fill="none" stroke="#00d2ff" stroke-width="1.2" class="cockpit-wave-ring cockpit-wave-4" />
+  </g>
+
+  <!-- 7. MARCAÇÕES DO DIAL / TICKS & NÚMEROS (0, 1M, 5M, 10M, 25M, 50M, 100M, 250M, 500M, 1G+) -->
+  <!-- Subticks Intermediários -->
+  <g class="cockpit-subticks">
+    <line x1="84.9" y1="276.2" x2="91.6" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="77.0" y1="262.7" x2="87.7" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="70.7" y1="248.3" x2="78.2" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="63.2" y1="218.0" x2="71.1" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="62.0" y1="202.4" x2="74.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="62.6" y1="186.8" x2="70.6" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="69.1" y1="156.2" x2="76.7" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="74.9" y1="141.7" x2="85.8" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="82.3" y1="127.9" x2="89.2" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="101.6" y1="103.3" x2="107.3" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="113.2" y1="92.8" x2="120.7" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="125.9" y1="83.6" x2="130.2" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="153.9" y1="69.9" x2="156.6" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="169.0" y1="65.5" x2="171.7" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="184.4" y1="62.9" x2="185.3" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="215.6" y1="62.9" x2="214.7" y2="70.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="231.0" y1="65.5" x2="228.3" y2="77.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="246.1" y1="69.9" x2="243.4" y2="77.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="274.1" y1="83.6" x2="269.8" y2="90.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="286.8" y1="92.8" x2="279.3" y2="102.1" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="298.4" y1="103.3" x2="292.7" y2="108.9" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="317.7" y1="127.9" x2="310.8" y2="132.1" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="325.1" y1="141.7" x2="314.2" y2="146.8" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="330.9" y1="156.2" x2="323.3" y2="158.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="337.4" y1="186.8" x2="329.4" y2="187.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="338.0" y1="202.4" x2="326.0" y2="202.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="336.8" y1="218.0" x2="328.9" y2="217.0" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="329.3" y1="248.3" x2="321.8" y2="245.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+    <line x1="323.0" y1="262.7" x2="312.3" y2="257.2" stroke="rgba(255,255,255,0.75)" stroke-width="1.4" />
+    <line x1="315.1" y1="276.2" x2="308.4" y2="271.8" stroke="rgba(255,255,255,0.4)" stroke-width="0.9" />
+  </g>
+
+  <!-- Ticks Principais & Valores -->
+  <g class="cockpit-major-ticks">
+    <!-- 0 -->
+    <line x1="94.3" y1="288.7" x2="108.1" y2="277.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="121.9" y="269.1" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">0</text>
+    <!-- 1M -->
+    <line x1="66.1" y1="233.4" x2="83.6" y2="229.0" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="101.0" y="228.2" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1M</text>
+    <!-- 5M -->
+    <line x1="65.0" y1="171.3" x2="82.6" y2="175.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="100.2" y="182.3" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">5M</text>
+    <!-- 10M -->
+    <line x1="91.3" y1="115.0" x2="105.4" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="119.6" y="140.7" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">10M</text>
+    <!-- 25M -->
+    <line x1="139.5" y1="76.0" x2="147.4" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="155.3" y="111.8" fill="#ffffff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">25M</text>
+    <!-- 50M -->
+    <line x1="200.0" y1="62.0" x2="200.0" y2="80.0" stroke="#00f0ff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="200.0" y="101.5" fill="#00f0ff" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">50M</text>
+    <!-- 100M -->
+    <line x1="260.5" y1="76.0" x2="252.6" y2="92.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="244.7" y="111.8" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">100M</text>
+    <!-- 250M -->
+    <line x1="308.7" y1="115.0" x2="294.6" y2="126.1" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+    <text x="280.4" y="140.7" fill="#ffffff" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">250M</text>
+    <!-- 500M -->
+    <line x1="335.0" y1="171.3" x2="317.4" y2="175.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.8" y="182.3" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">500M</text>
+    <!-- 1G -->
+    <line x1="333.9" y1="233.4" x2="316.4" y2="229.0" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="299.0" y="228.2" fill="#c084fc" font-size="9.2" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1G</text>
+    <!-- 1.25G+ -->
+    <line x1="305.7" y1="288.7" x2="291.9" y2="277.1" stroke="#c084fc" stroke-width="2.2" stroke-linecap="round" />
+    <text x="278.1" y="269.1" fill="#c084fc" font-size="8.5" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">1.25G+</text>
+  </g>
+
+  <!-- Aro Interno de Alta Tecnologia com Ranhuras -->
+  <circle cx="200" cy="200" r="82" fill="none" stroke="#00d2ff" stroke-width="2" opacity="0.5" stroke-dasharray="6 3" />
+  <!-- Marcador Ciano Topo (12h) e Base -->
+  <rect x="198.5" y="112" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+  <rect x="198.5" y="278" width="3" height="10" fill="#00f0ff" rx="1" filter="drop-shadow(0 0 4px #00f0ff)" />
+
+  <!-- 8. ARCO DINÂMICO DE PROGRESSO DA VELOCIDADE (SWEEP 260°, R=138, COMPRIMENTO=626.2) -->
+  <!-- Trilha Fundo -->
+  <circle cx="200" cy="200" r="138" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(140 200 200)" />
+  <!-- Trilha Ativa Iluminada -->
+  <circle id="hero-gauge-arc-progress" cx="200" cy="200" r="138" fill="none" stroke="url(#dialArcGrad_hero-gauge-needle)" stroke-width="7" stroke-dasharray="626.2 867.1" stroke-dashoffset="626.2" stroke-linecap="round" transform="rotate(140 200 200)" class="transition-all duration-150" filter="drop-shadow(0 0 8px #00d2ff)" />
+
+  <!-- 9. ENGRENAGEM CENTRAL CIANO GIRATÓRIA (18 DENTES) -->
+  <g class="cockpit-center-gear">
+    <circle cx="200" cy="200" r="62" fill="none" stroke="#0284c7" stroke-width="4.2" stroke-dasharray="5.4 5.4" opacity="0.7" filter="drop-shadow(0 0 3px #0284c7)" />
+    <circle cx="200" cy="200" r="56" fill="none" stroke="#0369a1" stroke-width="1.2" opacity="0.45" />
+  </g>
+
+  <!-- 10. PONTEIRO NEON LARANJA FLAMEJANTE (COM BRILHO E NÚCLEO) -->
+  <g id="hero-gauge-needle" class="cockpit-needle-group origin-center transition-transform" style="transform-origin: 200px 200px; transform: rotate(-130deg);">
+    <!-- Halo de Brilho Flamejante Externo do Ponteiro -->
+    <polygon points="193,200 200,68 207,200 200,224" fill="#ff6d00" opacity="0.35" filter="drop-shadow(0 0 10px #ff3d00)" />
+    <!-- Corpo Principal do Ponteiro Laranja -->
+    <polygon points="195.5,200 200,74 204.5,200 200,220" fill="url(#needleOrangeFireGrad_hero-gauge-needle)" filter="drop-shadow(0 0 6px #ff6d00)" />
+    <!-- Núcleo Filamentar Amarelo/Branco Incandescente -->
+    <line x1="200" y1="195" x2="200" y2="82" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="200" y1="195" x2="200" y2="90" stroke="#ffe57f" stroke-width="2.8" stroke-linecap="round" opacity="0.8" />
+    <!-- Contra-peso Traseiro -->
+    <polygon points="197,200 200,226 203,200" fill="#ff3d00" />
+  </g>
+
+  <!-- 11. CUBO CENTRAL METÁLICO EM DEGRADÊ AZUL & CAPA DE FIXAÇÃO -->
+  <circle cx="200" cy="200" r="38" fill="url(#centerHubRadialBg_hero-gauge-needle)" stroke="#00d2ff" stroke-width="2" />
+  <circle cx="200" cy="200" r="30" fill="#011024" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" />
+  <circle cx="200" cy="200" r="14" fill="#00d2ff" opacity="0.35" />
+  <circle cx="200" cy="200" r="7" fill="#00f0ff" filter="drop-shadow(0 0 4px #00f0ff)" />
+</svg>
+
+                <!-- AURA / 3 ONDAS RADIANTES DO BOTÃO CENTRAL -->
+                <div class="nperf-button-halo-wrapper">
+                  <div class="pulse-halo pulse-halo-1"></div>
+                  <div class="pulse-halo pulse-halo-2"></div>
+                  <div class="pulse-halo pulse-halo-3"></div>
+                </div>
+
+                <!-- BADGE CENTRAL LIVE TELEMETRIA -->
+                <div class="hero-gauge-center-badge shadow-md">
+                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-emerald mb-0.5"></div>
                   <span class="text-[9px] font-black tracking-widest text-white uppercase">LIVE</span>
                 </div>
-                <!-- Valor em display -->
-                <div class="text-center leading-none">
-                  <div class="text-[10px] font-mono text-sky-400 tracking-widest font-bold mb-0.5">MBPS</div>
-                  <div class="text-3xl font-black text-white font-mono tracking-tight">1107.72</div>
-                  <div class="text-[8px] font-mono text-sky-400/70 tracking-widest mt-0.5">ANECTTA <span class="text-cyan-300">NETPULSE</span></div>
+
+                <!-- DISPLAY DIGITAL CENTRAL FIXO (VALOR ABAIXO DO MBPS) -->
+                <div class="hero-gauge-center-display">
+                  <span class="nperf-speed-unit">
+                    MBPS
+                  </span>
+                  <span id="hero-gauge-speed-val" class="nperf-speed-value">
+                    584.20
+                  </span>
+                  <span class="nperf-speed-brand">
+                    ANECTTA <span>NETPULSE</span>
+                  </span>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Coluna Direita: Descrição editorial e CTA do NetPulse -->
-          <div class="text-center lg:text-left order-1 lg:order-2">
 
-            <!-- Label -->
-            <div class="inline-flex items-center gap-2 mb-4">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
-              <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold">ANECTTA NETPULSE</span>
-            </div>
+              <!-- CHAMADA PARA O ANECTTA NETPULSE & BOTÃO PARA O VELOCÍMETRO -->
+              <div class="mt-8 sm:mt-10 text-center max-w-md px-2 relative z-10 flex flex-col items-center">
+                <h3 class="text-xl sm:text-2xl font-black tracking-tight mb-1 brand-netpulse">
+                  <span class="brand-word-anectta">Anectta</span><span class="brand-word-netpulse">NetPulse</span>
+                </h3>
+                <p class="text-xs text-slate-500 mb-3.5 whitespace-normal sm:whitespace-nowrap">
+                  Teste a velocidade, latência e estabilidade da sua internet corporativa agora mesmo.
+                </p>
+                <a href="#velocimetro" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl btn-emergency text-xs sm:text-sm font-bold text-white shadow-md hover:shadow-lg transition-all group">
+                  <svg class="w-4 h-4 text-sky-200 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 3"/>
+                  </svg>
+                  <span>TESTAR MINHA VELOCIDADE</span>
+                  <svg class="w-3.5 h-3.5 text-sky-200 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
 
-            <!-- Título -->
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">
-              Sua internet está pronta para um<br>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300">atendimento remoto?</span>
-            </h2>
-
-            <!-- Descrição -->
-            <p class="text-sm text-sky-200/80 leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0">
-              O <strong class="text-white">ANECTTA NetPulse</strong> é nosso velocímetro corporativo de alta precisão. Antes de qualquer atendimento remoto, recomendamos testar sua rede para garantir a melhor experiência — sem travamentos, sem interrupções.
-            </p>
-
-            <!-- Feature list do velocímetro -->
-            <ul class="space-y-3 mb-8 text-left max-w-md mx-auto lg:mx-0">
-              <li class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-md bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shrink-0 mt-0.5">
-                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span class="text-xs text-sky-200/80"><strong class="text-white">Download & Upload real</strong> — throughput sustentado com múltiplos fluxos, não apenas picos instantâneos que os provedores exibem.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-md bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shrink-0 mt-0.5">
-                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span class="text-xs text-sky-200/80"><strong class="text-white">Latência (Ping) e Jitter</strong> — indicadores críticos para acesso remoto e VoIP. Abaixo de 30ms = sessão fluida garantida.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-md bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shrink-0 mt-0.5">
-                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span class="text-xs text-sky-200/80"><strong class="text-white">Estabilidade e Perda de Pacotes</strong> — detecta instabilidade oculta que causa travamentos invisíveis durante sessões remotas.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-md bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shrink-0 mt-0.5">
-                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span class="text-xs text-sky-200/80"><strong class="text-white">ISP e IP Público automáticos</strong> — dados enviados diretamente ao técnico para agilizar o diagnóstico sem retrabalho.</span>
-              </li>
-            </ul>
-
-            <!-- CTAs -->
-            <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <a href="#velocimetro" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white text-sm font-bold shadow-lg shadow-sky-500/30 hover:shadow-sky-500/50 transition-all group">
-                <svg class="w-4 h-4 text-sky-200 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                TESTAR MINHA VELOCIDADE
-                <svg class="w-3.5 h-3.5 text-sky-200 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </a>
-              <a href="teste-velocidade.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-sky-500/30 text-sky-300 text-sm font-semibold hover:bg-sky-500/10 transition-all">
-                Ver teste completo
-              </a>
             </div>
 
           </div>
+
         </div>
+
       </div>
     </section>
 
@@ -1433,7 +1591,7 @@
           </div>
 
           <!-- COLUNA DIREITA: FOGUETES EM FORMAÇÃO DE VOO (TRANSFERIDO PARA SERVIÇOS) -->
-          <div class="lg:col-span-5 flex justify-center items-center pt-8 sm:pt-12 lg:pt-16 reveal-on-scroll">
+          <div class="lg:col-span-5 flex justify-center items-center reveal-on-scroll">
             <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-lg flex items-center justify-center pointer-events-none select-none">
               
               <!-- Halo de Luz Radiante de Fundo (Cyan & Sky Glow) -->
