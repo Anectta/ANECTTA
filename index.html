@@ -432,87 +432,103 @@
                       </circle>
                     </g>
 
-                    <!-- 2. LINHAS GUIA E PULSOS DE ENERGIA CORRENDO PELAS TRILHAS -->
+                    <!-- 2. LINHAS GUIA E PULSOS DE ENERGIA CORRENDO PELAS TRILHAS (PARANDO ANTES DAS ENGRENAGENS) -->
                     <g class="circuit-paths-and-sparks">
 
                       <!-- Trilha 1: Topo (12h - Segurança) -->
-                      <path id="path-top" d="M 500 330 L 500 135" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-top" d="M 500 330 L 500 220" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 1 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 500 330 L 500 135" dur="1.8s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 500 330 L 500 220" dur="1.8s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 500 330 L 500 135" dur="1.8s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 500 330 L 500 220" dur="1.8s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 2: Superior Direita (1:30 - Helpdesk) -->
-                      <path id="path-top-right" d="M 620 380 L 710 290 L 795 205" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-top-right" d="M 620 380 L 705 295 L 740 260" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 2 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 620 380 L 710 290 L 795 205" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 620 380 L 705 295 L 740 260" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 620 380 L 710 290 L 795 205" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 620 380 L 705 295 L 740 260" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.22s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 3: Direita (3h - Gestão de Usuários) -->
-                      <path id="path-right" d="M 670 500 L 865 500" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-right" d="M 670 500 L 780 500" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 3 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 670 500 L 865 500" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 670 500 L 780 500" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 670 500 L 865 500" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 670 500 L 780 500" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.45s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 4: Inferior Direita (4:30 - Email M365) -->
-                      <path id="path-bottom-right" d="M 620 620 L 710 710 L 795 795" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-bottom-right" d="M 620 620 L 705 705 L 740 740" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 4 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 620 620 L 710 710 L 795 795" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 620 620 L 705 705 L 740 740" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 620 620 L 710 710 L 795 795" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 620 620 L 705 705 L 740 740" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.67s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 5: Base (6h - Redes & Wi-Fi) -->
-                      <path id="path-bottom" d="M 500 670 L 500 865" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-bottom" d="M 500 670 L 500 780" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 5 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 500 670 L 500 865" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 500 670 L 500 780" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 500 670 L 500 865" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 500 670 L 500 780" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="0.9s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 6: Inferior Esquerda (7:30 - Manutenção TI) -->
-                      <path id="path-bottom-left" d="M 380 620 L 290 710 L 205 795" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-bottom-left" d="M 380 620 L 295 705 L 260 740" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 6 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 380 620 L 290 710 L 205 795" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 380 620 L 295 705 L 260 740" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 380 620 L 290 710 L 205 795" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 380 620 L 295 705 L 260 740" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.12s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 7: Esquerda (9h - Banco de Dados) -->
-                      <path id="path-left" d="M 330 500 L 135 500" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-left" d="M 330 500 L 220 500" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 7 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 330 500 L 135 500" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 330 500 L 220 500" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 330 500 L 135 500" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 330 500 L 220 500" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.35s" repeatCount="indefinite" />
                       </circle>
 
                       <!-- Trilha 8: Superior Esquerda (10:30 - Nuvem) -->
-                      <path id="path-top-left" d="M 380 380 L 290 290 L 205 205" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
+                      <path id="path-top-left" d="M 380 380 L 295 295 L 260 260" fill="none" stroke="rgba(0, 240, 255, 0.4)" stroke-width="3" stroke-dasharray="6 4" />
                       <!-- Pulso 8 -->
-                      <circle r="7" fill="#00f0ff" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 380 380 L 290 290 L 205 205" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
+                      <circle r="6.5" fill="#00f0ff" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 380 380 L 295 295 L 260 260" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
                       </circle>
-                      <circle r="12" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
-                        <animateMotion path="M 380 380 L 290 290 L 205 205" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
+                      <circle r="11" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#neonSparkGlow)">
+                        <animateMotion path="M 380 380 L 295 295 L 260 260" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.8;1" dur="1.8s" begin="1.57s" repeatCount="indefinite" />
                       </circle>
                     </g>
 
