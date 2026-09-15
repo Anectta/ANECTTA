@@ -963,10 +963,10 @@ body.selo-modal-open {
 
 @keyframes rocketFlightCompanion {
   0%, 100% {
-    transform: translateY(0px) rotate(-24deg) scale(1.01);
+    transform: translateY(88px) rotate(-34deg) scale(1.01);
   }
   50% {
-    transform: translateY(-18px) rotate(-24deg) scale(1.01);
+    transform: translateY(70px) rotate(-34deg) scale(1.01);
   }
 }
 
