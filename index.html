@@ -371,12 +371,14 @@
 
               </div>
 
-              <!-- Coluna Direita: Imagem ecossistema 24/7 IT -->
+              <!-- Coluna Direita: Imagem ecossistema 24/7 IT com Micro-interação Elétrica Integrada -->
               <div class="lg:col-span-5 flex flex-col items-center justify-center py-2 relative reveal-on-scroll">
-                <div class="relative w-full max-w-[460px] mx-auto select-none">
-                  <!-- Glow decorativo -->
+                <div class="relative w-full max-w-[460px] mx-auto select-none group">
+                  
+                  <!-- Glow decorativo de fundo -->
                   <div class="absolute inset-0 bg-gradient-to-br from-sky-400/25 via-cyan-400/10 to-transparent rounded-3xl blur-2xl pointer-events-none"></div>
-                  <!-- Imagem -->
+
+                  <!-- Imagem Base do Ecossistema -->
                   <img
                     src="assets/images/hero-ecosystem.png"
                     alt="ANECTTA — Ecossistema de Suporte de TI Remoto 24/7: servidores, segurança, helpdesk e redes"
@@ -385,6 +387,118 @@
                     width="460"
                     height="460"
                   >
+
+                  <!-- ⚡ OVERLAY DE MICRO-INTERAÇÃO DE PULSOS ELÉTRICOS (SVG CIBERNÉTICO) ⚡ -->
+                  <svg class="absolute inset-0 w-full h-full z-15 pointer-events-none overflow-visible" viewBox="0 0 1000 1000">
+                    <defs>
+                      <!-- Gradiente Elétrico Neon Ciano -->
+                      <linearGradient id="electricGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f0ff" stop-opacity="1" />
+                        <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
+                        <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3" />
+                      </linearGradient>
+
+                      <!-- Filtro de Brilho Neon Intense Glow -->
+                      <filter id="neonSparkGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+
+                      <filter id="coreWaveGlow" x="-30%" y="-30%" width="160%" height="160%">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge>
+                          <feMergeNode in="blur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+                    </defs>
+
+                    <!-- 1. ONDAS DE CHOQUE ELÉTRICAS EXPANSIVAS DO NÚCLEO CENTRAL (24/7 REMOTE IT) -->
+                    <g class="core-electric-waves" opacity="0.85">
+                      <circle cx="500" cy="500" r="160" fill="none" stroke="#00f0ff" stroke-width="3" filter="url(#coreWaveGlow)" style="animation: core-wave-expand 3s cubic-bezier(0.1, 0.7, 0.1, 1) infinite;" />
+                      <circle cx="500" cy="500" r="160" fill="none" stroke="#38bdf8" stroke-width="2.5" filter="url(#coreWaveGlow)" style="animation: core-wave-expand 3s cubic-bezier(0.1, 0.7, 0.1, 1) infinite; animation-delay: 1s;" />
+                      <circle cx="500" cy="500" r="160" fill="none" stroke="#00d2ff" stroke-width="2" filter="url(#coreWaveGlow)" style="animation: core-wave-expand 3s cubic-bezier(0.1, 0.7, 0.1, 1) infinite; animation-delay: 2s;" />
+                    </g>
+
+                    <!-- 2. TRILHAS DE CIRCUITOS & PULSOS ELÉTRICOS CORRENDO DO CENTRO ÀS 8 ENGRENAGENS -->
+                    <g class="circuit-pulses" stroke-linecap="round" stroke-linejoin="round">
+
+                      <!-- Trilha 1: Topo (12h - Segurança / Shield) -->
+                      <path d="M 500 320 L 500 135" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite;" />
+
+                      <!-- Trilha 2: Superior Direita (1:30 - Helpdesk) -->
+                      <path d="M 625 375 L 720 280 L 795 205" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 0.3s;" />
+
+                      <!-- Trilha 3: Direita (3h - Gestão de Usuários) -->
+                      <path d="M 680 500 L 865 500" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 0.6s;" />
+
+                      <!-- Trilha 4: Inferior Direita (4:30 - Email & M365) -->
+                      <path d="M 625 625 L 720 720 L 795 795" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 0.9s;" />
+
+                      <!-- Trilha 5: Base (6h - Redes & Wi-Fi) -->
+                      <path d="M 500 680 L 500 865" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 1.2s;" />
+
+                      <!-- Trilha 6: Inferior Esquerda (7:30 - Manutenção TI) -->
+                      <path d="M 375 625 L 280 720 L 205 795" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 1.5s;" />
+
+                      <!-- Trilha 7: Esquerda (9h - Banco de Dados) -->
+                      <path d="M 320 500 L 135 500" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 1.8s;" />
+
+                      <!-- Trilha 8: Superior Esquerda (10:30 - Nuvem & Servidores) -->
+                      <path d="M 375 375 L 280 280 L 205 205" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-dasharray="40 300" filter="url(#neonSparkGlow)" style="animation: circuit-energy-flow 2.4s linear infinite; animation-delay: 2.1s;" />
+                    </g>
+
+                    <!-- 3. ANÉIS DE ENERGIA PULSANTES NAS 8 ENGRENAGENS AO RECEBER O PULSO -->
+                    <g class="gear-arrival-halos">
+                      <!-- 12h: Segurança -->
+                      <circle cx="500" cy="135" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; transform-origin: 500px 135px;" />
+
+                      <!-- 1:30: Helpdesk -->
+                      <circle cx="795" cy="205" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 0.3s; transform-origin: 795px 205px;" />
+
+                      <!-- 3h: Usuários -->
+                      <circle cx="865" cy="500" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 0.6s; transform-origin: 865px 500px;" />
+
+                      <!-- 4:30: E-mail M365 -->
+                      <circle cx="795" cy="795" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 0.9s; transform-origin: 795px 795px;" />
+
+                      <!-- 6h: Redes -->
+                      <circle cx="500" cy="865" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 1.2s; transform-origin: 500px 865px;" />
+
+                      <!-- 7:30: Manutenção -->
+                      <circle cx="205" cy="795" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 1.5s; transform-origin: 205px 795px;" />
+
+                      <!-- 9h: Banco de Dados -->
+                      <circle cx="135" cy="500" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 1.8s; transform-origin: 135px 500px;" />
+
+                      <!-- 10:30: Nuvem -->
+                      <circle cx="205" cy="205" r="95" fill="none" stroke="#00f0ff" stroke-width="3" style="animation: gear-energy-pulse 2.4s ease-in-out infinite; animation-delay: 2.1s; transform-origin: 205px 205px;" />
+                    </g>
+                  </svg>
+
+                  <!-- ESTILOS DAS ANIMAÇÕES DO ECOSSISTEMA -->
+                  <style>
+                    @keyframes circuit-energy-flow {
+                      0% { stroke-dashoffset: 340; opacity: 0.1; }
+                      15% { opacity: 1; }
+                      85% { opacity: 1; }
+                      100% { stroke-dashoffset: 0; opacity: 0.1; }
+                    }
+                    @keyframes core-wave-expand {
+                      0% { r: 150px; opacity: 0.95; stroke-width: 4px; }
+                      60% { opacity: 0.6; }
+                      100% { r: 230px; opacity: 0; stroke-width: 1px; }
+                    }
+                    @keyframes gear-energy-pulse {
+                      0%, 100% { transform: scale(0.95); opacity: 0.2; }
+                      50% { transform: scale(1.08); opacity: 0.95; filter: drop-shadow(0 0 10px #00f0ff); }
+                    }
+                  </style>
+
                   <!-- Badge 100% Remoto -->
                   <div class="absolute -top-3 -right-3 z-20 flex items-center gap-1.5 bg-white border border-sky-200 shadow-lg rounded-full px-3 py-1.5">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
